@@ -27,11 +27,6 @@ jobs:
           -o \
           -i README.md \
           -p "--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css" \
-          -p "--number-sections" \
-          -p "--quiet" \
-          -p "--section-divs" \
-          -p "--toc" \
-          -p "--toc-depth=2" \
           -v \
           . \
           ./build
