@@ -20,7 +20,7 @@ jobs:
       - name: Preflight
         run: |
           sudo apt-get install pandoc
-          mkdir .build
+          mkdir .site
       - name: Publi.sh
         run: |
           ./publi.sh \
@@ -28,12 +28,12 @@ jobs:
           -p "--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css" \
           -v \
           . \
-          .build
+          .site
       - name: Deploy to GitHub Pages
         if: success()
         uses: crazy-max/ghaction-github-pages@v2
         with:
-          build_dir: .build
+          build_dir: .site
           fqdn: www.01001010.net
           jekyll: false
           target_branch: gh-pages
