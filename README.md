@@ -3,7 +3,7 @@ title: Publi.sh
 ---
 
 # publi.sh
-Publi.sh is a [pandoc](https://pandoc.org) wrapper that can simplify the process of publishing markdown documents on the web.
+[Publi.sh](/publi.sh) is a [pandoc](https://pandoc.org) wrapper that can simplify the process of publishing markdown documents on the web.
 
 ## Usage
 `./publi.sh [options] <input directory> <output directory>`
