@@ -1,6 +1,6 @@
 ---
 title: subcurmudgeon
-subtitle: all things in moderation
+subtitle: *all things in moderation*
 toc: true
 ---
 
