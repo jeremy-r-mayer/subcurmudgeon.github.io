@@ -22,13 +22,8 @@ jobs:
           -v \
           . \
           .site
-      - name: Deploy to GitHub Pages
-        if: success()
-        uses: crazy-max/ghaction-github-pages@v2
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
-          build_dir: .site
-          fqdn: www.01001010.net
-          jekyll: false
-          target_branch: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: .site
