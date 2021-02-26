@@ -24,7 +24,6 @@ jobs:
       - name: Publi.sh
         run: |
           ./publi.sh \
-          -o \
           -i README.md \
           -p "--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css" \
           -v \
