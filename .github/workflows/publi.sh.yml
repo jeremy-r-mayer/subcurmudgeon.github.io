@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Preflight
+      - name: Workspace Preflight
         run: |
           sudo apt-get install pandoc
           mkdir .site
@@ -23,7 +23,7 @@ jobs:
           . \
           .site
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.0.0
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: gh-pages
-          folder: .site
+          cname: www.subcurmudgeon.com
+          publish_dir: .site
