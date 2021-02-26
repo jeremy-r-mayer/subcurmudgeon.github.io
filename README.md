@@ -22,7 +22,12 @@ title: Publi.sh
 This is the command used by the Github Action that builds this page:
 
 ```
-publi.sh -i README.md -p "--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css" -v . .site
+publi.sh \
+-i README.md \
+-p "--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css" \
+-v \
+. \
+.site
 ```
 
 - `-i README.md` renames the output of `README.md` to `index.html`, not `README.html`.
