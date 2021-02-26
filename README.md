@@ -1,74 +1,21 @@
 ---
-title: Publi.sh
+title: subcurmudgeon
+subtitle: all things in moderation
 ---
 
-***[Publi.sh](/publi.sh)*** is a [bash](https://www.gnu.org/software/bash/) wrapper for [pandoc](https://pandoc.org) that can simplify the process of publishing markdown documents on the web.
+# subcurmudgeon
+## all things in moderation
 
-## Usage
-`./publi.sh [options] <input directory> <output directory>`
+***
 
-## Options
+### DARE ALRIGHT THINGS
+On February 22, 2021, the good geniuses at the [NASA Jet Propulsion Labratory](https://www.jpl.nasa.gov/) have [successfully landed](https://mars.nasa.gov/mars2020/multimedia/videos/?v=461) the shockingly adorable all-terrain minivan [Perseverance](https://mars.nasa.gov/mars2020/) on the surface of Mars. This feat was acheived by hurling the rover towards the red planet in the carny womb of a [gravitron](https://en.wikipedia.org/wiki/Gravitron), then lowering it to the surface by way of an overhead crane wearing a jet-pack. Later, when a suitable location is found, Perserverance will offload [Ingenuity](https://mars.nasa.gov/technology/helicopter/), a small helicopter currently hitching a ride on the rover's belly. If this doesn't make you giddy then you are *dead* inside.
 
-| Flag                | Description                                                  |
-| ------------------- | ------------------------------------------------------------ |
-| `-d`, `-v`          | display verbose debugging output                             |
-| `-h`                | display help                                                 |
-| `-i <glob pattern>` | rename all input files matching glob pattern to `index.html` |
-| `-o`                | confirm overwrite of output directory                        |
-| `-p <args>`         | pass additional arguments to pandoc                          |
+Also, I've started another new web project - a journal of sorts about seeking the middle, trying to be okay, and finding some comfort in being alright. Exciting stuff.
 
-## Example
-This is the command used by the Github Action that builds this page:
+***
 
-```
-publi.sh \
--i README.md \
--p "--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css" \
--v \
-. \
-.site
-```
-
-- `-i README.md` renames the output of `README.md` to `index.html`, not `README.html`.
-- `-p "--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css"` sets the `--css` option in pandoc.
-- `-v` enables verbose output for troubleshooting purposes.
-- `. .site` tells publi.sh to use the current directory as input and `.site` as output.
-
-This is the Github Action:
-
-```yaml
-name: Publi.sh
-
-on:
-  push:
-    branches: [ main ]
-  workflow_dispatch:
-
-jobs:
-  publish:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Preflight
-        run: |
-          sudo apt-get install pandoc
-          mkdir .site
-      - name: Publi.sh
-        run: |
-          curl -L -s https://raw.githubusercontent.com/jeremy-r-mayer/publi.sh/main/publi.sh | bash -s -- \
-          -i README.md \
-          -p "--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css" \
-          -v \
-          . \
-          .site
-      - name: Deploy to GitHub Pages
-        if: success()
-        uses: crazy-max/ghaction-github-pages@v2
-        with:
-          build_dir: .site
-          fqdn: www.01001010.net
-          jekyll: false
-          target_branch: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
+[jeremy@sbcn.me](mailto:jeremy@sbcn.me)  
+Seeker of the Alright Truth,  
+Sampler of Fine Vices,  
+& Master Adventurer of the Great Underground Empire.
