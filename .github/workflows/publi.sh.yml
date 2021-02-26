@@ -16,7 +16,7 @@ jobs:
           mkdir .site
       - name: Publi.sh
         run: |
-          curl -L -s https://raw.githubusercontent.com/jeremy-r-mayer/publi.sh/main/publi.sh | bash -s -- \
+          curl -L -s https://raw.githubusercontent.com/subcurmudgeon/publi.sh/main/publi.sh | bash -s -- \
           -i README.md \
           -p "--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css" \
           -v \
