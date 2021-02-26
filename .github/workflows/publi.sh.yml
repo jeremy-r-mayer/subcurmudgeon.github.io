@@ -35,8 +35,13 @@ jobs:
           -v \
           . \
           ./build
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.0.0
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
         with:
-          branch: gh-pages
-          folder: build
+          build_dir: build
+          fqdn: www.01001010.net
+          jekyll: false
+          target_branch: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
