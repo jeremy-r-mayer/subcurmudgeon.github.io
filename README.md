@@ -1,7 +1,6 @@
 ---
 title: "subcurmudgeon"
 subtitle: "***all things in moderation***"
-toc: true
 ---
 
 ## DARE ALRIGHT THINGS
@@ -11,7 +10,7 @@ Also, I've started another new web project. This is a journal of sorts, about se
 
 ***
 
-[jeremy@sbcn.me](mailto:jeremy@sbcn.me)  
-Seeker of the Alright Truth,  
-Sampler of Fine Vices,  
-& Master Adventurer of the Great Underground Empire.
+**[jeremy@sbcn.me](mailto:jeremy@sbcn.me)**  
+*Seeker of the Alright Truth,*  
+*Sampler of Fine Vices,*  
+*& Master Adventurer of the Great Underground Empire.*
