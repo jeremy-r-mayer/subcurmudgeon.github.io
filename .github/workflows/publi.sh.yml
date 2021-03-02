@@ -10,11 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Preflight - Update Workspace
-        run: sudo apt-get update
-      - name: Preflight - Install Dependancies
-        run: sudo apt-get --no-install-recommends install pandoc
-      - name: Publi.sh
+
+      - name: Preflight - System Update
+        run: |
+          sudo apt-get update
+          sudo apt-get --no-install-recommends install pandoc
+
+      - name: Preflight - Checkout Submodules
+        run: git submodule update --init --recursive
+
+      - name: Publish
         run: |
           .publi.sh/publi.sh \
           -i README.md \
@@ -22,7 +27,8 @@ jobs:
           -v \
           . \
           .site
-      - name: Deploy to Github Pages
+      
+      - name: Deployment
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
