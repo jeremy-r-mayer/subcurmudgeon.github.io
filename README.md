@@ -1,6 +1,6 @@
 ---
-title: "subcurmudgeon"
-subtitle: "***all things in moderation***"
+title: Title
+subtitle: Subtitle
 ---
 
 Waiting...
