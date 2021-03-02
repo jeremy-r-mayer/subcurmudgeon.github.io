@@ -24,6 +24,7 @@ jobs:
           .publi.sh/publi.sh \
           -i README.md \
           -p "--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css" \
+          -p "--quiet" \
           -v \
           . \
           .site
