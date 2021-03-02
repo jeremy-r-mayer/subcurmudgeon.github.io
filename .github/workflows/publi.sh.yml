@@ -11,13 +11,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Preflight - System Update
-        run: |
-          sudo apt-get update
-          sudo apt-get --no-install-recommends install pandoc
-
       - name: Preflight - Checkout Submodules
         run: git submodule update --init --recursive
+
+      - name: Preflight - Prepare Workspace
+        run: |
+          sudo apt-get --no-install-recommends install pandoc
+          mkdir .site
 
       - name: Publish
         run: |
@@ -28,7 +28,7 @@ jobs:
           . \
           .site
       
-      - name: Deployment
+      - name: Site Deployment
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
