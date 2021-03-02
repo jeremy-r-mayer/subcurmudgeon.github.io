@@ -14,6 +14,8 @@ jobs:
         run: |
           sudo apt-get install pandoc
           mkdir .site
+      - name: Check Directories
+        run: ls -laR
       - name: Publi.sh
         run: |
           curl -L -s https://raw.githubusercontent.com/subcurmudgeon/publi.sh/main/publi.sh | bash -s -- \
