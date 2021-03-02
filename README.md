@@ -5,4 +5,4 @@ Waiting for content can be so tiring.
 ## Notes
 
 ## Projects
-- [publi.sh](/publi.sh/) - a pandoc wrapper
+- [publi.sh](https://www.github.com/subcurmudgeon/publi.sh) - a pandoc wrapper
