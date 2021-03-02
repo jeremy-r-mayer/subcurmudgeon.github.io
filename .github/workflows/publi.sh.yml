@@ -6,16 +6,16 @@ on:
   workflow_dispatch:
 
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Workspace Preflight
+      - name: Preflight - Install Dependancies
+        run: sudo apt-get install pandoc
+      - name: Preflight - Check Directories
         run: |
-          sudo apt-get install pandoc
-          mkdir .site
-      - name: Check Directories
-        run: ls -laR
+          mkdir ~/.site
+          ls -laR ~
       - name: Publi.sh
         run: |
           curl -L -s https://raw.githubusercontent.com/subcurmudgeon/publi.sh/main/publi.sh | bash -s -- \
@@ -24,7 +24,7 @@ jobs:
           -v \
           . \
           .site
-      - name: Deploy
+      - name: Deploy to Github Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
