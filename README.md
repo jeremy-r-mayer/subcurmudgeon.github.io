@@ -1,6 +1,1 @@
----
-title: Title
-subtitle: Subtitle
----
-
-Waiting...
+Waiting for content can be so tiring.
