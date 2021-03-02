@@ -21,7 +21,7 @@ jobs:
           curl -L -s https://raw.githubusercontent.com/subcurmudgeon/publi.sh/main/publi.sh | bash -s -- \
           -i README.md \
           -p "--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css" \
-          -v \
+          -V \
           . \
           .site
       - name: Deploy to Github Pages
