@@ -10,21 +10,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Preflight - Install Dependancies
-        run: sudo apt-get install pandoc
-      - name: Preflight - Check Directories
+
+      - name: Preflight - Checkout Submodules
+        run: git submodule update --init --recursive
+
+      - name: Preflight - Prepare Workspace
         run: |
+          sudo apt-get --no-install-recommends install pandoc
           mkdir .site
-          ls -laR
-      - name: Publi.sh
+
+      - name: Publish
         run: |
-          curl -L -s https://raw.githubusercontent.com/subcurmudgeon/publi.sh/main/publi.sh | bash -s -- \
+          .publi.sh/publi.sh \
           -i README.md \
           -p "--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css" \
+          -p "--from=markdown+backtick_code_blocks+definition_lists+task_lists+emoji+fancy_lists+fenced_code_attributes+line_blocks+markdown_in_html_blocks+yaml_metadata_block" \
+          -p "--include-after-body=.pandoc/include/after-body.html" \
+          -p "--include-before-body=.pandoc/include/before-body.html" \
+          -p "--include-in-header=.pandoc/include/in-header.html" \
+          -p "--quiet" \
+          -p "--standalone" \
+          -p "--template=.pandoc/templates/default.html" \
+          -p "--to=html" \
           -v \
           . \
           .site
-      - name: Deploy to Github Pages
+      
+      - name: Site Deployment
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
