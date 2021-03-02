@@ -5,4 +5,4 @@ Waiting for content can be so tiring.
 ## Notes
 
 ## Projects
-- [publi.sh](/publi.sh.html) - a pandoc wrapper
+- [publi.sh](/publi.sh/) - a pandoc wrapper
