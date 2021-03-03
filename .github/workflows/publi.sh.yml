@@ -11,14 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # Install the latest amd64 Pandoc package from Github because the OS package archives are always out of date.
+      # Install the latest pandoc package from Github because the OS archives are always out of date.
       # https://github.com/jgm/pandoc
       - name: Pandoc
         run: |
-          wget --quiet --output-document="pandoc-latest-amd64.deb" $(wget -qO - https://api.github.com/repos/jgm/pandoc/releases | grep browser_download_url | grep '64[.]deb' | head -n 1 | cut -d '"' -f 4)
-          sudo dpkg -i pandoc-latest-amd64.deb
+          wget --quiet --output-document=".pandoc-latest-amd64.deb" $(wget -qO - https://api.github.com/repos/jgm/pandoc/releases | grep browser_download_url | grep '64[.]deb' | head -n 1 | cut -d '"' -f 4)
+          sudo dpkg -i .pandoc-latest-amd64.deb
 
-      # Run the latest version of Publi.sh from Github with any necessary arguments.
+      # Run the latest version of publi.sh from Github with any necessary arguments.
       # https://github.com/subcurmudgeon/publi.sh
       - name: Publi.sh
         run: |
