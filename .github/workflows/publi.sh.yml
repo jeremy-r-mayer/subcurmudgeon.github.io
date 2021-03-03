@@ -11,16 +11,18 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Preflight - Install Pandoc
+      # Install the latest amd64 Pandoc package from Github because the OS package archives are always out of date.
+      # https://github.com/jgm/pandoc
+      - name: Pandoc
         run: |
-          DEB=$(curl -s https://api.github.com/repos/jgm/pandoc/releases | grep browser_download_url | grep '64[.]deb' | head -n 1 | cut -d '"' -f 4)
-          wget "$DEB"
-          sudo dpkg -i $(basename "$DEB")
-          mkdir .site
+          wget --quiet --output-document="pandoc-latest-amd64.deb" $(wget -qO - https://api.github.com/repos/jgm/pandoc/releases | grep browser_download_url | grep '64[.]deb' | head -n 1 | cut -d '"' -f 4)
+          sudo dpkg -i pandoc-latest-amd64.deb
 
-      - name: Publish
+      # Run the latest version of Publi.sh from Github with any necessary arguments.
+      # https://github.com/subcurmudgeon/publi.sh
+      - name: Publi.sh
         run: |
-          curl https://raw.githubusercontent.com/subcurmudgeon/publi.sh/main/publi.sh | bash -s -- \
+          wget -qO - https://raw.githubusercontent.com/subcurmudgeon/publi.sh/main/publi.sh | bash -s -- \
           -i README.md \
           -p "--css=https://fonts.xz.style/serve/inter.css" \
           -p "--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css" \
@@ -37,7 +39,9 @@ jobs:
           . \
           .site
       
-      - name: Deployment
+      # Deploy final output to Github Pages.
+      # https://github.com/peaceiris/actions-gh-pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
