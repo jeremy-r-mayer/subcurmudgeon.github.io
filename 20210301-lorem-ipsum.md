@@ -1,7 +1,6 @@
 ---
 title: "Lorem Ipsum"
 subtitle: "***because waiting on content sucks***"
-date: 2021-03-01
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum eget nulla id venenatis. Nulla ut ipsum purus. Vestibulum enim diam, aliquam at turpis vel, vestibulum imperdiet sem. Morbi ornare luctus diam at vulputate. Donec lobortis, est eget ultrices rhoncus, ante lacus commodo dui, non aliquam leo velit vel ante. Sed imperdiet est sed suscipit consectetur. Pellentesque interdum et lacus quis fringilla. Donec at vehicula arcu.
