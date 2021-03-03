@@ -22,7 +22,7 @@ jobs:
       # https://docs.github.com/en/actions/reference/environment-variables
       - name: Tag Build
         run: |
-          echo "<em><a href=\"https://www.github.com/subcurmudgeon/publi.sh\">publi.sh</a> &mdash; commit: $GITHUB_SHA workflow: <a href=\"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\">$GITHUB_SHA</a></em>" >> .pandoc/include/after-body.html
+          echo "<span style=\"font-size: x-small; font-style: italic;\"><a href=\"https://www.github.com/subcurmudgeon/publi.sh\">publi.sh</a> &mdash; commit: <a href=\"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\">$GITHUB_SHA</a></span>" >> .pandoc/include/after-body.html
 
       # Run the latest version of publi.sh from Github with any necessary arguments.
       # https://github.com/subcurmudgeon/publi.sh
