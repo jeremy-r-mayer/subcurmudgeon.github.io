@@ -11,10 +11,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Preflight
+      - name: Preflight - Install Pandoc
         run: |
-          curl -s https://api.github.com/repos/jgm/pandoc/releases | grep browser_download_url | grep '64[.]deb' | head -n 1 | cut -d '"' -f 4
-          sudo dpkg -i pandoc-*-amd64.deb
+          sudo dpkg -i $(curl -s https://api.github.com/repos/jgm/pandoc/releases | grep browser_download_url | grep '64[.]deb' | head -n 1 | cut -d '"' -f 4)
           mkdir .site
 
       - name: Publish
