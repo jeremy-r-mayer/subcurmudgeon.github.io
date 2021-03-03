@@ -1,9 +1,7 @@
 ---
-title: "subcurmudgeon"
-subtitle: "***the ramblings of an internet stranger***"
+title: "Lorem Ipsum"
+subtitle: "***because waiting on content sucks***"
 ---
-
-## Lorem Ipsum, Motherfuckers
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum eget nulla id venenatis. Nulla ut ipsum purus. Vestibulum enim diam, aliquam at turpis vel, vestibulum imperdiet sem. Morbi ornare luctus diam at vulputate. Donec lobortis, est eget ultrices rhoncus, ante lacus commodo dui, non aliquam leo velit vel ante. Sed imperdiet est sed suscipit consectetur. Pellentesque interdum et lacus quis fringilla. Donec at vehicula arcu.
 
