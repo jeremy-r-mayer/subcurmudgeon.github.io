@@ -1,4 +1,4 @@
-Waiting for content can be so tiring...
+Waiting for content can be so tiring.
 
 ## Journal
 
