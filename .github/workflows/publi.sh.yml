@@ -18,11 +18,13 @@ jobs:
           wget --quiet --output-document=".pandoc-latest-amd64.deb" $(wget -qO - https://api.github.com/repos/jgm/pandoc/releases | grep browser_download_url | grep '64[.]deb' | head -n 1 | cut -d '"' -f 4)
           sudo dpkg -i .pandoc-latest-amd64.deb
 
-      # Insert a link to this workflow action into the after-body.html template.
+      # Append a link to this action workflow into the after-body.html template.
       # https://docs.github.com/en/actions/reference/environment-variables
-      - name: Insert Workflow Action Data
+      - name: Append Workflow Link
         run: |
-          echo "<hr />\n<span style=\"font-size: smaller; font-style: italic;\">\n\t<a href=\"https://www.github.com/subcurmudgeon/publi.sh\">publi.sh</a> &mdash; commit: <a href=\"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\">$GITHUB_SHA</a>\n</span>" >> .pandoc/include/after-body.html
+          mkdir -p .pandoc/include
+          touch .pandoc/include/after-body.html
+          echo -e "<hr />\n<span style=\"font-size: smaller; font-style: italic;\">\n\t<a href=\"https://www.github.com/subcurmudgeon/publi.sh\">publi.sh</a> &mdash; commit: <a href=\"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\">$GITHUB_SHA</a>\n</span>" >> .pandoc/include/after-body.html
 
       # Run the latest version of publi.sh from Github with any necessary arguments.
       # https://github.com/subcurmudgeon/publi.sh
