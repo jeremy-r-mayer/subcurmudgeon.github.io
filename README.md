@@ -1,8 +1,4 @@
 ---
 title: DARE ALRIGHTY THINGS
-toc: true
+subtitle: some people go to other planets, others start blogs
 ---
-
-## Posts
-
-## Projects
