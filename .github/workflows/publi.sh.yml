@@ -21,7 +21,7 @@ jobs:
           curl https://raw.githubusercontent.com/subcurmudgeon/publi.sh/main/publi.sh | bash -s -- \
           -i README.md \
           -p "--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css" \
-          -p "--from=markdown+backtick_code_blocks+definition_lists+task_lists+emoji+fancy_lists+fenced_code_attributes+line_blocks+markdown_in_html_blocks+yaml_metadata_block" \
+          -p "--from=markdown+backtick_code_blocks+definition_lists+emoji+fancy_lists+fenced_code_attributes+line_blocks+markdown_in_html_blocks+yaml_metadata_block" \
           -p "--include-after-body=.pandoc/include/after-body.html" \
           -p "--include-before-body=.pandoc/include/before-body.html" \
           -p "--include-in-header=.pandoc/include/in-header.html" \
