@@ -18,6 +18,12 @@ jobs:
           wget --quiet --output-document=".pandoc-latest-amd64.deb" $(wget -qO - https://api.github.com/repos/jgm/pandoc/releases | grep browser_download_url | grep '64[.]deb' | head -n 1 | cut -d '"' -f 4)
           sudo dpkg -i .pandoc-latest-amd64.deb
 
+      # Tag build with workflow information.
+      # https://docs.github.com/en/actions/reference/environment-variables
+      - name: Tag Build
+        run: |
+          echo "<em><a href=\"https://www.github.com/subcurmudgeon/publi.sh\">publi.sh</a> &mdash; commit: $GITHUB_SHA workflow: <a href=\"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\">$GITHUB_SHA</a></em>" >> .pandoc/include/after-body.html
+
       # Run the latest version of publi.sh from Github with any necessary arguments.
       # https://github.com/subcurmudgeon/publi.sh
       - name: Publi.sh
