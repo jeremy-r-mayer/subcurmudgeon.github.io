@@ -11,17 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Preflight - Checkout Submodules
-        run: git submodule update --init --recursive
-
-      - name: Preflight - Prepare Workspace
+      - name: Preflight
         run: |
           sudo apt-get --no-install-recommends install pandoc
           mkdir .site
 
       - name: Publish
         run: |
-          .publi.sh/publi.sh \
+          curl -s https://raw.githubusercontent.com/subcurmudgeon/publi.sh/main/publi.sh | bash -s \
           -i README.md \
           -p "--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1/new.min.css" \
           -p "--from=markdown+backtick_code_blocks+definition_lists+task_lists+emoji+fancy_lists+fenced_code_attributes+line_blocks+markdown_in_html_blocks+yaml_metadata_block" \
@@ -36,7 +33,7 @@ jobs:
           . \
           .site
       
-      - name: Site Deployment
+      - name: Deployment
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
