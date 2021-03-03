@@ -1,1 +1,8 @@
-Waiting for content can be so tiring.
+---
+title: DARE ALRIGHTY THINGS
+toc: true
+---
+
+## Posts
+
+## Projects
