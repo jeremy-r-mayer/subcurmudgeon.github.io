@@ -13,7 +13,9 @@ jobs:
 
       - name: Preflight - Install Pandoc
         run: |
-          sudo dpkg -i $(curl -s https://api.github.com/repos/jgm/pandoc/releases | grep browser_download_url | grep '64[.]deb' | head -n 1 | cut -d '"' -f 4)
+          DEB=$(curl -s https://api.github.com/repos/jgm/pandoc/releases | grep browser_download_url | grep '64[.]deb' | head -n 1 | cut -d '"' -f 4)
+          curl -o pandoc.deb -s "$DEB"
+          sudo dpkg -i "$DEB"
           mkdir .site
 
       - name: Publish
