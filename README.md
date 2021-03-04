@@ -1,6 +1,6 @@
 ---
-title: README
-subtitle: this is the blog of J.R. Mayer
+title: Welcome
+subtitle: My name is Jeremy, and these are my things.
 ---
 
 - [Recipes](/recipes)
