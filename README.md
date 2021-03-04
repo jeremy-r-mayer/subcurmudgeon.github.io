@@ -1,7 +1,3 @@
----
-toc: ""
----
-
 - [Lorem Ipsum](20210301-lorem-ipsum.html)
 - [Recipes](/recipes)
 - [Hexbright Firmware](https://www.github.com/subcurmudgeon/hexbright-firmware)
