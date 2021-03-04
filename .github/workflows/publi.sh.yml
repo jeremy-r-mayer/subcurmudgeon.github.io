@@ -43,6 +43,8 @@ jobs:
           -p "--template=.pandoc/templates/default.html" \
           -p "--title-prefix=subcurmudgeon" \
           -p "--to=html" \
+          -p "--toc" \
+          -p "--toc-depth=2" \
           -v \
           . \
           .site
