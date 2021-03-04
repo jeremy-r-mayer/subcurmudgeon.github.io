@@ -1,4 +1,4 @@
-## Changlog:
+## Changelog:
 - added recipe: [Soft Pretzels](/recipes/soft-pretzels.html)
 - added recipe: [Bread](/recipes/bread.html)
 - added recipe: [Biscotti](/recipes/biscotti.html)
