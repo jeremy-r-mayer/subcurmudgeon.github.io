@@ -1,6 +1,6 @@
 ---
 title: Soft Pretzels
-tag: #recipe
+tags: recipe, baking, bread
 ---
 
 ## Equipment
