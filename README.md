@@ -1,8 +1,3 @@
----
-title: Welcome
-subtitle: My name is Jeremy, and these are my things.
----
-
 ## About
 
 ## Journal
