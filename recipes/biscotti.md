@@ -1,6 +1,6 @@
 ---
 title: Biscotti
-tag: #recipe
+tag: #recipe, #biscotti
 ---
 
 ## Equipment
