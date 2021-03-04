@@ -1,2 +1,2 @@
-- [Recipes for Simple People](/recipes)
+- [Recipes](/recipes)
 - [Lorem Ipsum](20210301-lorem-ipsum.html)
