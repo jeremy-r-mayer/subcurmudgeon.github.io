@@ -4,20 +4,20 @@ tag: #recipe
 ---
 
 ## Equipment
-- [ ] Stand Mixer
-- [ ] Baking Sheet
-- [ ] Parchment Paper
-- [ ] Oven-Safe Pan
-- [ ] Cooling Rack
+- Stand Mixer
+- Baking Sheet
+- Parchment Paper
+- Oven-Safe Pan
+- Cooling Rack
 
 ## Ingredients
-- [ ] 2 1/4 cups `Warm Water`
-- [ ] 2 tablespoons `Sugar`
-- [ ] 1 tablespoon `Active Dry Yeast`
-- [ ] 1 tablespoon `Salt`
-- [ ] 2 tablespoons `Olive Oil` or `Avocado Oil`
-- [ ] 6 cups `All-Purpose Flour`
-- [ ] Several `Ice Cubes`
+- 2 1/4 cups `Warm Water`
+- 2 tablespoons `Sugar`
+- 1 tablespoon `Active Dry Yeast`
+- 1 tablespoon `Salt`
+- 2 tablespoons `Olive Oil` or `Avocado Oil`
+- 6 cups `All-Purpose Flour`
+- Several `Ice Cubes`
 
 ***
 
