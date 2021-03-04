@@ -45,6 +45,7 @@ jobs:
           -p "--to=html" \
           -p "--toc" \
           -p "--toc-depth=2" \
+          -p "--toc-title=Contents:" \
           -v \
           . \
           .site
