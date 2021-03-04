@@ -1,5 +1,5 @@
 ---
-title: Basic Bread
+title: Bread
 tag: #recipe
 ---
 
