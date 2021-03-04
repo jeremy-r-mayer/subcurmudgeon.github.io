@@ -1,5 +1,6 @@
 ---
-title: Biscotti
+title: Basic Biscotti
+subtitle: easy to make, easy to customize
 tags: recipe, baking, biscotti
 ---
 
@@ -25,7 +26,7 @@ tags: recipe, baking, biscotti
 ## Directions
 1. Place an oven rack in the middle position and preheat to 375 degrees F.
 2. Line a baking sheet with parchment paper.
-3. Put the `butter` and `sugar` into the bowl of a stand mixer and beat until creamy.
+3. Put the `unsalted butter` and `sugar` into the bowl of a stand mixer and beat until creamy.
 4. Add the `eggs` and `extracts` to mixer bowl. Mix to combine.
 5. Add the `all-purpose flour`, `baking powder`, and `salt` to mixer bowl and mix on medium speed until well combined and smooth.
 6. Remove dough and divide in half. Shape each half into a rectangle roughly 8" long, 3" wide and 3/4" thick. Place the two halves side-by-side on a parchment-lined baking sheet and sprinkle with `coarse sugar`.
