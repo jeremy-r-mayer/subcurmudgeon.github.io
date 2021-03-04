@@ -1,6 +1,6 @@
 ---
 title: Bread
-tag: #recipe
+tags: recipe, baking, bread
 ---
 
 ## Equipment
