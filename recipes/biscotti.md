@@ -1,5 +1,6 @@
 ---
 title: Basic Biscotti
+tag: #recipe
 ---
 
 ## Equipment
