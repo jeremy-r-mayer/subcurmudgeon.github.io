@@ -3,7 +3,7 @@ title: Recipes
 ---
 
 ## Baking
-These are all easy to make and don't require anything extraordinary[^1].
+These are all easy to make and don't require anything extraordinary.[^1]
 
 - [Biscotti](/recipes/biscotti.html)
 - [Bread](/recipes/bread.html)
