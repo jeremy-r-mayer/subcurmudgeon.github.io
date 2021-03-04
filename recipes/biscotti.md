@@ -1,6 +1,6 @@
 ---
 title: Biscotti
-tags: recipe, biscotti
+tags: recipe, baking, biscotti
 ---
 
 ## Equipment
