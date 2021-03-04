@@ -4,21 +4,21 @@ tag: #recipe
 ---
 
 ## Equipment
-- [ ] Stand Mixer
-- [ ] Baking Sheet
-- [ ] Parchment Paper
-- [ ] Cooling Rack
+- Stand Mixer
+- Baking Sheet
+- Parchment Paper
+- Cooling Rack
 
 ## Ingredients
-- [ ] 4 tablespoons cold, `Unsalted Butter`, roughly cut into 4 pieces
-- [ ] 3/4 cup `Sugar`
-- [ ] 2 `Eggs`
-- [ ] *Optionally*, 1/2 teaspoon `Almond Extract` or `Anise Extract`
-- [ ] 1 teaspoon `Vanilla Extract` *or* 1 1/2 teaspoons if not using optional extracts.
-- [ ] 2 cups `All-Purpose Flour`
-- [ ] 1 teaspoon `Baking Powder`
-- [ ] 1/2 teaspoon `Salt`
-- [ ] `Coarse Sugar`
+- 4 tablespoons cold, `Unsalted Butter`, roughly cut into 4 pieces
+- 3/4 cup `Sugar`
+- 2 `Eggs`
+- *Optionally*, 1/2 teaspoon `Almond Extract` or `Anise Extract`
+- 1 teaspoon `Vanilla Extract` *or* 1 1/2 teaspoons if not using optional extracts.
+- 2 cups `All-Purpose Flour`
+- 1 teaspoon `Baking Powder`
+- 1/2 teaspoon `Salt`
+- `Coarse Sugar`
 
 ***
 
