@@ -1,6 +1,6 @@
 ---
 title: Soft Pretzels
-subtitle: because home-made soft pretzels are better
+subtitle: my post-apocalyptic currency of choice
 tags: recipe, baking, bread
 ---
 
