@@ -9,6 +9,9 @@
 <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css" />
 <style>
+
+// New.css - https://github.com/xz/new.css
+
 @media (prefers-color-scheme: dark) {
   :root {
     --nc-tx-1:  #d0d0d0;
@@ -23,6 +26,7 @@
     --nc-ac-tx: #ffffff;
   }
 }
+
 @media (prefers-color-scheme: light) {
   :root {
     --nc-tx-1:  #404040;
@@ -37,43 +41,63 @@
     --nc-ac-tx: #0c4047;
   }
 }
+
 a {
   text-decoration: none;
 }
-a.sitetitle {
-  background: var(--nc-tx-2);
-  border: 1px solid black;
-  color: var(--nc-bg-2);
-  font-size: large;
-  font-weight: bold;
-  padding: 0.25em;
-}
+
 code {
   border: none;
   color: var(--nc-ac-1);
   font-size: 1em;
   padding: 1px 3px;
 }
+
 h1, h2, h3 {
   border-bottom: none;
 }
+
 hr {
   border: 0;
   border-bottom: 1px dashed var(--nc-bg-3);
   margin: 1rem auto;
 }
+
+// -- Pandoc
+
+p.subtitle, p.author, p.date {
+  font-weight: bold;
+}
+  
 p.subtitle {
   font-style: italic;
-  font-weight: bold;
 }
+
 p.author {
   font-size: smaller;
-  font-weight: bold;
 }
+
 p.date {
   font-size: small;
-  font-weight: bold;
 }
+
+// -- Other
+
+.sitetitle {
+  font-size: large;
+  font-weight: bold;
+  padding: 0.33em;
+}
+
+.sitetitle > a {
+  color: var(--nc-tx-2);
+}
+
+.sitetitle > a:first-child {
+  background: var(--nc-tx-2);
+  color: var(--nc-bg-2);
+}
+
 </style>
 </head>
 
@@ -106,7 +130,7 @@ p.date {
 
 <hr />
 <span style="font-size: small; font-style: italic;">
-	<a href="https://www.github.com/subcurmudgeon/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/subcurmudgeon/subcurmudgeon.github.io/actions/runs/625029398" target="_blank">d109058</a>
+	<a href="https://www.github.com/subcurmudgeon/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/subcurmudgeon/subcurmudgeon.github.io/actions/runs/625069304" target="_blank">fd23d33</a>
 </span>
 
 </body>
