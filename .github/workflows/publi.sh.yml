@@ -32,7 +32,6 @@ jobs:
         run: |
           wget -qO - https://raw.githubusercontent.com/subcurmudgeon/publi.sh/main/publi.sh | bash -s -- \
           -i README.md \
-          -p "--css=https://fonts.xz.style/serve/inter.css" \
           -p "--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css" \
           -p "--from=markdown+backtick_code_blocks+definition_lists+emoji+fancy_lists+fenced_code_attributes+line_blocks+markdown_in_html_blocks+task_lists+yaml_metadata_block" \
           -p "--include-after-body=.pandoc/include/after-body.html" \
