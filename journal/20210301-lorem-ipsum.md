@@ -1,6 +1,6 @@
 ---
 title: Lorem Ipsum
-subtitle: Because waiting on content *sucks*.
+subtitle: because waiting on content *sucks*
 author: J. Mayer
 date: 01 March 2021
 ---

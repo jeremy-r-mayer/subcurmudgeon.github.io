@@ -1,6 +1,6 @@
 ---
 title: Soft Pretzels
-subtitle: My post-apocalyptic currency of choice!
+subtitle: my post-apocalyptic currency of choice
 tags: recipe, baking, bread
 ---
 
