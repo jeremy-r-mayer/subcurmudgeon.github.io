@@ -1,6 +1,6 @@
 ---
 title: Bread
-subtitle: bread is a basic survival skill
+subtitle: Bread is a basic survival skill.
 tags: recipe, baking, bread
 ---
 
