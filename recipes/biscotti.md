@@ -1,6 +1,5 @@
 ---
 title: Basic Biscotti
-subtitle: easy to make, easy to customize
 tags: recipe, baking, biscotti
 ---
 
