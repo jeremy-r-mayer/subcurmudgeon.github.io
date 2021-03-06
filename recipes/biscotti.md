@@ -1,5 +1,5 @@
 ---
-title: Basic Biscotti
+title: Biscotti
 tags: recipe, baking, biscotti
 ---
 
