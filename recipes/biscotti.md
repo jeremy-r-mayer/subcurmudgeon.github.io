@@ -4,26 +4,26 @@ subtitle: I like 'em with my coffee.
 tags: recipe, baking, biscotti
 ---
 
-## Equipment
-- Stand Mixer
-- Baking Sheet
-- Parchment Paper
-- Cooling Rack
+# Requirements
+| Equipment |
+|:--|
+| Stand Mixer |
+| Baking Sheet |
+| Parchment Paper |
+| Cooling Rack |
 
-## Ingredients
-- 4 tablespoons cold, `Unsalted Butter`, roughly cut into 4 pieces
-- 3/4 cup `Sugar`
-- 2 `Eggs`
-- *Optionally*, 1/2 teaspoon `Almond Extract` or `Anise Extract`
-- 1 teaspoon `Vanilla Extract` *or* 1 1/2 teaspoons if not using optional extracts.
-- 2 cups `All-Purpose Flour`
-- 1 teaspoon `Baking Powder`
-- 1/2 teaspoon `Salt`
-- `Coarse Sugar`
+| Ingredients | |
+|:--|:--|
+| `unsalted butter`| 4 tablespoons, cold, cut into 4 equal pieces |
+| `sugar ` | 3/4 cup |
+| `eggs` | 2 |
+| `almond extract` or `anise extract` | 1/2 teaspoon |
+| `vanilla extract` | 1 teaspoon *or* 1 1/2 teaspoons if not using `almond extract` or `anise extract` |
+| `all-purpose flour` | 2 cups |
+| `salt` | 1/2 teaspoon |
+| `coarse sugar` ||
 
-***
-
-## Directions
+## Instructions
 1. Place an oven rack in the middle position and preheat to 375 degrees F.
 2. Line a baking sheet with parchment paper.
 3. Put the `unsalted butter` and `sugar` into the bowl of a stand mixer and beat until creamy.
