@@ -1,4 +1,5 @@
 ## Changelog:
+- added journal: [Publi.sh as a Github Action](20210306-publish-as-a-github-action.html)
 - added recipe: [Soft Pretzels](/recipes/soft-pretzels.html)
 - added recipe: [Bread](/recipes/bread.html)
 - added recipe: [Biscotti](/recipes/biscotti.html)
