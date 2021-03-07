@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<title>subcurmudgeon – Publi.sh as a Github Action</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css" />
+<style>
+
+/* -- New.CSS overrides - https://github.com/xz/new.css */
+
+:root {
+--nc-font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+--nc-font-mono: Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono', 'Courier New', Courier, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --nc-tx-1:  #d0d0d0;
+    --nc-tx-2:  #ffffff;
+    --nc-bg-1:  #2a2a2a;
+    --nc-bg-2:  #222222;
+    --nc-bg-3:  #4a4a4a;
+    --nc-lk-1:  #a2d2ff;
+    --nc-lk-2:  #3291ff;
+    --nc-lk-tx: #ffffff;
+    --nc-ac-1:  #ff2600;
+    --nc-ac-tx: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --nc-tx-1:  #404040;
+    --nc-tx-2:  #202020;
+    --nc-bg-1:  #fafafa;
+    --nc-bg-2:  #eeeeee;
+    --nc-bg-3:  #dadada;
+    --nc-lk-1:  #3291ff;
+    --nc-lk-2:  #a2d2ff;
+    --nc-lk-tx: #ffffff;
+    --nc-ac-1:  #ff2600;
+    --nc-ac-tx: #0c4047;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+code {
+  border: none;
+  color: var(--nc-ac-1);
+  font-size: 1em;
+  padding: 1px 3px;
+}
+
+h1, h2, h3 {
+  border-bottom: none;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px dashed var(--nc-bg-3);
+  margin: 1rem auto;
+}
+
+/* -- Pandoc - https://pandoc.org -- */
+
+p.subtitle {
+  font-size: large;
+  opacity: 0.5;
+}
+
+p.author {
+  font-size: large;
+}
+
+p.date {
+  font-size: small;
+}
+
+/* -- Other - https://sbcn.me -- */
+
+p.sitetitle {
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+
+p.sitetitle > a {
+  background: var(--nc-tx-2);
+  color: var(--nc-bg-2);
+  padding: 0.33em;
+}
+
+</style>
+</head>
+
+<body>
+
+<header id="title-block-header">
+<p class="sitetitle">
+  <a href="/">subcurmudgeon</a>
+</p>
+<h1 class="title">Publi.sh as a Github Action</h1>
+<p class="subtitle">automated publishing with pandoc</p>
+</header>
+
+  
+  
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Publi.sh</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at"> main </span><span class="kw">]</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">workflow_dispatch</span><span class="kw">:</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">automudger</span><span class="kw">:</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v2</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">      # Install the latest pandoc package from Github because the OS archives are always out of date.</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">      # https://github.com/jgm/pandoc</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Install Pandoc</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>          wget --quiet --output-document=&quot;.pandoc-latest-amd64.deb&quot; $(wget -qO - https://api.github.com/repos/jgm/pandoc/releases | grep browser_download_url | grep &#39;64[.]deb&#39; | head -n 1 | cut -d &#39;&quot;&#39; -f 4)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>          sudo dpkg -i .pandoc-latest-amd64.deb</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">      # Append a link to this action workflow into the after-body.html template.</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">      # https://docs.github.com/en/actions/reference/environment-variables</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Append Workflow Link</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>          mkdir -p .pandoc/include</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>          touch .pandoc/include/after-body.html</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>          echo -e &quot;&lt;hr /&gt;\n&lt;span style=\&quot;font-size: small; font-style: italic;\&quot;&gt;\n\t&lt;a href=\&quot;https://www.github.com/subcurmudgeon/publi.sh\&quot; target=\&quot;_blank\&quot;&gt;publi.sh&lt;/a&gt; &amp;rarr; &lt;a href=\&quot;$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\&quot; target=\&quot;_blank\&quot;&gt;$(echo $GITHUB_SHA | cut -c 1-7)&lt;/a&gt;\n&lt;/span&gt;&quot; &gt;&gt; .pandoc/include/after-body.html</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="co">      # Run the latest version of publi.sh from Github with any necessary arguments.</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="co">      # https://github.com/subcurmudgeon/publi.sh</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Publi.sh</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>          wget -qO - https://raw.githubusercontent.com/subcurmudgeon/publi.sh/main/publi.sh | bash -s -- \</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>          -i README.md \</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>          -p &quot;--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css&quot; \</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>          -p &quot;--from=markdown+backtick_code_blocks+definition_lists+emoji+fancy_lists+fenced_code_attributes+line_blocks+markdown_in_html_blocks+task_lists+yaml_metadata_block&quot; \</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>          -p &quot;--include-after-body=.pandoc/include/after-body.html&quot; \</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>          -p &quot;--include-before-body=.pandoc/include/before-body.html&quot; \</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>          -p &quot;--include-in-header=.pandoc/include/in-header.html&quot; \</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>          -p &quot;--quiet&quot; \</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>          -p &quot;--standalone&quot; \</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>          -p &quot;--template=.pandoc/templates/default.html&quot; \</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>          -p &quot;--title-prefix=subcurmudgeon&quot; \</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>          -p &quot;--to=html&quot; \</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>          -v \</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>          . \</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>          .site</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="at">      </span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="co">      # Deploy final output to Github Pages.</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="co">      # https://github.com/peaceiris/actions-gh-pages</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Deploy</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> peaceiris/actions-gh-pages@v3</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">with</span><span class="kw">:</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">github_token</span><span class="kw">:</span><span class="at"> ${{ secrets.GITHUB_TOKEN }}</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">cname</span><span class="kw">:</span><span class="at"> www.subcurmudgeon.com</span></span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">publish_dir</span><span class="kw">:</span><span class="at"> .site</span></span></code></pre></div>
+
+
+<hr />
+<span style="font-size: small; font-style: italic;">
+	<a href="https://www.github.com/subcurmudgeon/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/subcurmudgeon/subcurmudgeon.github.io/actions/runs/628481199" target="_blank">0d6c1fe</a>
+</span>
+
+</body>
+</html>
