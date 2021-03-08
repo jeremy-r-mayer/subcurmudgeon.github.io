@@ -17,7 +17,7 @@ tags: recipe, baking, bread
 - 1 tablespoon `Active Dry Yeast`
 - 1 tablespoon `Salt`
 - 2 tablespoons `Olive Oil`
-- 6 cups `All-Purpose Flour`
+- 6 cups / 30.7 ounces / 870 grams `All-Purpose Flour`
 - Several `Ice Cubes`
 
 ***
