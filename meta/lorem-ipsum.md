@@ -1,7 +1,6 @@
 ---
 title: Lorem Ipsum
 subtitle: Waiting on content sucks.
-author: J. Mayer
 date: 01 March 2021
 ---
 
