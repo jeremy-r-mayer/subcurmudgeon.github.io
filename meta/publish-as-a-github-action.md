@@ -1,6 +1,7 @@
 ---
 title: Publi.sh as a Github Action
 subtitle: automated publishing with pandoc
+date: 06 March 2021
 ---
 
 ```yaml
