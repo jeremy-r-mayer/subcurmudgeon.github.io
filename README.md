@@ -1,5 +1,5 @@
 # Hi.
-These are the things I expect to forget.
+These are some things I expect to forget and some others I'd like to share.
 
 ---
 
