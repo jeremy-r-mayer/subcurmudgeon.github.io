@@ -126,6 +126,8 @@ p.sitetitle > a > svg {
 <p class="date">06 March 2021</p>
   
   
+<p>This is the Workflow I use to rebuild this site whenever I push changes to the repository.</p>
+<p>The steps are: 1. Install Pandoc - Some bash-fu downloads the latest pandoc amd64 release and installs it. 2. Append Workflow Link - This step isn’t required, but I find it useful. A link to the publi.sh repository and the current action run ID are appended to the inlucded pandoc <code>after-body.html</code> HTML snippet. 3. Publi.sh - Since no configuration is required, the publi.sh script is run directly from the repository using wget and output is directed into the <code>.site</code> directory. 4. Deploy - The contents of the <code>.site</code> directory are pushed to Github Pages.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Publi.sh</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
@@ -134,7 +136,7 @@ p.sitetitle > a > svg {
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">workflow_dispatch</span><span class="kw">:</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">automudger</span><span class="kw">:</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">publish</span><span class="kw">:</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v2</span></span>
@@ -186,7 +188,7 @@ p.sitetitle > a > svg {
 
 <hr />
 <span style="font-size: small; font-style: italic;">
-	<a href="https://www.github.com/subcurmudgeon/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/subcurmudgeon/subcurmudgeon.github.io/actions/runs/668257195" target="_blank">552a9f6</a>
+	<a href="https://www.github.com/subcurmudgeon/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/subcurmudgeon/subcurmudgeon.github.io/actions/runs/671608389" target="_blank">6d9bb8c</a>
 </span>
 
 </body>
