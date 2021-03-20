@@ -13,6 +13,6 @@ Some of these things I expect I'll forget.
 - [Hexbright Firmware](https://www.github.com/subcurmudgeon/hexbright-firmware)
 
 ###### RECIPES
-- [Soft Pretzels](/recipes/soft-pretzels.html)
-- [Bread](/recipes/bread.html)
 - [Biscotti](/recipes/biscotti.html)
+- [Bread](/recipes/bread.html)
+- [Soft Pretzels](/recipes/soft-pretzels.html)

@@ -4,6 +4,14 @@ subtitle: automated publishing with pandoc
 date: 06 March 2021
 ---
 
+This is the Workflow I use to rebuild this site whenever I push changes to the repository.
+
+The steps are:
+1. Install Pandoc - Some bash-fu downloads the latest pandoc amd64 release and installs it.
+2. Append Workflow Link - This step isn't required, but I find it useful. A link to the publi.sh repository and the current action run ID are appended to the inlucded pandoc `after-body.html` HTML snippet.
+3. Publi.sh - Since no configuration is required, the publi.sh script is run directly from the repository using wget and output is directed into the `.site` directory.
+4. Deploy - The contents of the `.site` directory are pushed to Github Pages.
+
 ```yaml
 name: Publi.sh
 
@@ -13,7 +21,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  automudger:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
