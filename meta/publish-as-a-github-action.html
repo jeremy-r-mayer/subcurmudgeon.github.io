@@ -127,7 +127,13 @@ p.sitetitle > a > svg {
   
   
 <p>This is the Workflow I use to rebuild this site whenever I push changes to the repository.</p>
-<p>The steps are: 1. Install Pandoc - Some bash-fu downloads the latest pandoc amd64 release and installs it. 2. Append Workflow Link - This step isn’t required, but I find it useful. A link to the publi.sh repository and the current action run ID are appended to the inlucded pandoc <code>after-body.html</code> HTML snippet. 3. Publi.sh - Since no configuration is required, the publi.sh script is run directly from the repository using wget and output is directed into the <code>.site</code> directory. 4. Deploy - The contents of the <code>.site</code> directory are pushed to Github Pages.</p>
+<p>The steps are:</p>
+<ol type="1">
+<li>Install Pandoc - Some bash-fu downloads the latest pandoc amd64 release and installs it.</li>
+<li>Append Workflow Link - This step isn’t required, but I find it useful. A link to the publi.sh repository and the current action run ID are appended to the inlucded pandoc <code>after-body.html</code> HTML snippet.</li>
+<li>Publi.sh - Since no configuration is required, the publi.sh script is run directly from the repository using wget and output is directed into the <code>.site</code> directory.</li>
+<li>Deploy - The contents of the <code>.site</code> directory are pushed to Github Pages.</li>
+</ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Publi.sh</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
@@ -188,7 +194,7 @@ p.sitetitle > a > svg {
 
 <hr />
 <span style="font-size: small; font-style: italic;">
-	<a href="https://www.github.com/subcurmudgeon/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/subcurmudgeon/subcurmudgeon.github.io/actions/runs/671608389" target="_blank">6d9bb8c</a>
+	<a href="https://www.github.com/subcurmudgeon/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/subcurmudgeon/subcurmudgeon.github.io/actions/runs/671610917" target="_blank">e614c53</a>
 </span>
 
 </body>
