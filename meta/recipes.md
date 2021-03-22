@@ -1,6 +1,5 @@
 ---
 title: My Recipe Collection
-toc-title: "RECIPES:"
 ---
 
 # Biscotti
