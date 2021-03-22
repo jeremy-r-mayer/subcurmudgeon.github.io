@@ -1,6 +1,7 @@
-# Biscotti
-
-A crunchy sponge for tea and coffee.
+---
+title: Biscotti
+subtitle: A crunchy sponge for your tea and coffee.
+---
 
 ## Equipment
 - Stand Mixer

@@ -1,6 +1,7 @@
-# Bread
-
-Bread is a basic survival skill.
+---
+title: Bread
+subtitle: A basic survival skill.
+---
 
 ## Equipment
 - Stand Mixer
