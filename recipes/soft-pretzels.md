@@ -3,7 +3,7 @@ title: Soft Pretzels
 subtitle: Pair with beer and repeat as necessary.
 ---
 
-> In a *best-case* scenario, soft pretzels are my post-apocalypse currency of choice. 
+> In a best-case scenario, soft pretzels are my post-apocalypse currency of choice. 
 
 ## Equipment
 - Stand Mixer
