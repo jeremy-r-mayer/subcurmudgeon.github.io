@@ -38,13 +38,14 @@ jobs:
           -p "--include-before-body=.pandoc/include/before-body.html" \
           -p "--include-in-header=.pandoc/include/in-header.html" \
           -p "--quiet" \
+          -p "--shift-heading-level-by=1" \
           -p "--standalone" \
           -p "--template=.pandoc/templates/default.html" \
           -p "--title-prefix=subcurmudgeon" \
           -p "--to=html" \
           -p "--toc" \
-          -p "--toc-depth:1" \
-          -p "--toc-title:CONTENTS:" \
+          -p "--toc-depth=1" \
+          -p "--toc-title=\"CONTENTS:\"" \
           -v \
           . \
           .site
