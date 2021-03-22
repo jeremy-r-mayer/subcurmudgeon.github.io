@@ -5,7 +5,6 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-<meta name="dcterms.date" content="2021-03-06" />
 <title>subcurmudgeon – Publi.sh as a Github Action</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css" />
 <style>
@@ -128,19 +127,17 @@ p.sitetitle > a > svg {
   <a href="/">jm</a>
 </p>
 <h1 class="title">Publi.sh as a Github Action</h1>
-<p class="subtitle">automated publishing with pandoc</p>
 </header>
 
-<p class="date">06 March 2021</p>
   
   
 <p>This is the Workflow I use to rebuild this site whenever I push changes to the repository.</p>
 <p>Descriptions of the steps are as follows:</p>
 <ol type="1">
-<li><strong>Install Pandoc</strong> - Some bash-fu downloads the latest pandoc amd64 release and installs it.</li>
-<li><strong>Append Workflow Link</strong> - This step isn’t required, but I find it useful. A link to the publi.sh repository and the current action run ID are appended to the included pandoc <code>after-body.html</code> HTML snippet.</li>
-<li><strong>Publi.sh</strong> - Since no configuration is required, the publi.sh script is run directly from the repository using wget and output is directed into the <code>.site</code> directory.</li>
-<li><strong>Deploy</strong> - The contents of the <code>.site</code> directory are pushed to Github Pages.</li>
+<li><p><strong>Install Pandoc</strong> - Some bash-fu downloads the latest pandoc amd64 release and installs it.</p></li>
+<li><p><strong>Append Workflow Link</strong> - This step isn’t required, but I find it useful. A link to the publi.sh repository and the current action run ID are appended to the included pandoc <code>after-body.html</code> HTML snippet.</p></li>
+<li><p><strong>Publi.sh</strong> - Since no configuration is required, the publi.sh script is run directly from the repository using wget and output is directed into the <code>.site</code> directory.</p></li>
+<li><p><strong>Deploy</strong> - The contents of the <code>.site</code> directory are pushed to Github Pages.</p></li>
 </ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Publi.sh</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -168,7 +165,7 @@ p.sitetitle > a > svg {
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="fu">        run</span><span class="kw">: </span><span class="ch">|</span></span>
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>          mkdir -p .pandoc/include</span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>          touch .pandoc/include/after-body.html</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>          echo -e &quot;&lt;hr /&gt;\n&lt;span style=\&quot;font-size: small; font-style: italic;\&quot;&gt;\n\t&lt;a href=\&quot;https://www.github.com/subcurmudgeon/publi.sh\&quot; target=\&quot;_blank\&quot;&gt;publi.sh&lt;/a&gt; &amp;rarr; &lt;a href=\&quot;$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\&quot; target=\&quot;_blank\&quot;&gt;$(echo $GITHUB_SHA | cut -c 1-7)&lt;/a&gt;\n&lt;/span&gt;&quot; &gt;&gt; .pandoc/include/after-body.html</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>          echo -e &quot;&lt;hr /&gt;\n&lt;p style=\&quot;font-size: small; font-style: italic;\&quot;&gt;\n\t$(date --iso-8601=seconds)\n\t&lt;br /&gt;\n\t&lt;a href=\&quot;https://www.github.com/subcurmudgeon/publi.sh\&quot; target=\&quot;_blank\&quot;&gt;publi.sh&lt;/a&gt; &amp;rarr; &lt;a href=\&quot;$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\&quot; target=\&quot;_blank\&quot;&gt;$(echo $GITHUB_SHA | cut -c 1-7)&lt;/a&gt;\n&lt;/p&gt;&quot; &gt;&gt; .pandoc/include/after-body.html</span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="co">      # Run the latest version of publi.sh from Github with any necessary arguments.</span></span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="co">      # https://github.com/subcurmudgeon/publi.sh</span></span>
@@ -202,9 +199,9 @@ p.sitetitle > a > svg {
 
 <hr />
 <p style="font-size: small; font-style: italic;">
-	2021-03-22T22:42:42+00:00
+	2021-03-22T22:59:19+00:00
 	<br />
-	<a href="https://www.github.com/subcurmudgeon/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/subcurmudgeon/subcurmudgeon.github.io/actions/runs/677688013" target="_blank">7d5be4e</a>
+	<a href="https://www.github.com/subcurmudgeon/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/subcurmudgeon/subcurmudgeon.github.io/actions/runs/677722563" target="_blank">4335a47</a>
 </p>
 
 </body>
