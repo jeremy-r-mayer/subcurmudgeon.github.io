@@ -2,17 +2,17 @@
 title: My Recipe Collection
 ---
 
-## Biscotti
+# Biscotti
 
 Basically a crunchy sponge for tea and coffee.
 
-### Equipment
+## Equipment
 - Stand Mixer
 - Baking Sheet
 - Parchment Paper
 - Cooling Rack
 
-### Ingredients
+## Ingredients
 - 4 tablespoons cold, `Unsalted Butter`, roughly cut into 4 pieces
 - 3/4 cup `Sugar`
 - 2 `Eggs`
@@ -23,7 +23,7 @@ Basically a crunchy sponge for tea and coffee.
 - 1/2 teaspoon `Salt`
 - `Coarse Sugar`
 
-### Directions
+## Directions
 1. Place an oven rack in the middle position and preheat to 375 degrees F.
 2. Line a baking sheet with parchment paper.
 3. Put the `unsalted butter` and `sugar` into the bowl of a stand mixer and beat until creamy.
@@ -37,18 +37,18 @@ Basically a crunchy sponge for tea and coffee.
 
 ---
 
-## Bread
+# Bread
 
 Bread is a basic survival skill.
 
-### Equipment
+## Equipment
 - Stand Mixer
 - Baking Sheet
 - Parchment Paper
 - Oven-Safe Pan
 - Cooling Rack
 
-### Ingredients
+## Ingredients
 - 2 1/4 cups `Warm Water`
 - 2 tablespoons `Sugar`
 - 1 tablespoon `Active Dry Yeast`
@@ -57,7 +57,7 @@ Bread is a basic survival skill.
 - 30.7 ounces or 870 grams `All-Purpose Flour`
 - Several `Ice Cubes`
 
-### Directions
+## Directions
 1. In the bowl of a stand mixer combine the `warm water`, `sugar` and `active dry yeast`. Allow to sit for 5 minutes or until the yeast begins to foam.
 2. Add the `salt`, `olive oil`, and `all-purpose flour` to the mixer bowl. Using a dough hook attachment, mix slowly until combined, then increase to medium speed and knead until dough is smooth and pulls away from the bowl. Remove the dough, clean and oil the bowl, then return the dough to the bowl and cover with a towel for 1 hour or until the dough has doubled in size.
 3. Remove dough from bowl and divide in half. Pat each piece of dough into a thick rectangle. Roll the dough starting from the long edge and pinch the ends to seal. Arrange the loaves side-by-side and seam-side down on a parchment-lined baking sheet. Slash the tops of each loaf and cover with a clean towel. Allow to rise for 1 additional hour.
@@ -67,18 +67,18 @@ Bread is a basic survival skill.
 
 ---
 
-## Soft Pretzels
+# Soft Pretzels
 
 In a best-case scenario soft pretzels are my post-apocalypse currency of choice.
 
-### Equipment
+## Equipment
 - Stand Mixer
 - 2 Baking Sheets
 - Saucepan or Pot (about 8 quarts)
 - Parchment Paper
 - Cooling Rack
 
-### Ingredients
+## Ingredients
 - 1 1/2 cups `Warm Water`
 - 1 tablespoons `Sugar`
 - 2 teaspoons `Kosher Salt`
@@ -90,7 +90,7 @@ In a best-case scenario soft pretzels are my post-apocalypse currency of choice.
 - 1 large `Egg Yolk`, beaten with 1 tablespoon of `Water`
 - `Pretzel Salt`, or `Course Sea Salt`
 
-### Directions
+## Directions
 1. Combine `warm water`, `sugar` and `kosher salt` in the bowl of a stand mixer and sprinkle `active dry yeast` on top. Allow to sit for 5 minutes or until the yeast begins to foam, then add the ` all-pupose flour` and melted `unsalted butter`. Using a dough hook attachment, mix on low speed until combined, then set to medium speed and knead until the dough is smooth and pulls away from the bowl. Remove the dough, clean and oil the bowl, then return the dough to the bowl and cover with a towel for 1 hour or until the dough has doubled in size.
 2. Preheat the oven to 450 degrees F. Line two baking sheets with parchment paper.
 3. Combine the `baking soda` and 10 cups of `water` in a large saucepan or pot and bring to a rolling boil.
