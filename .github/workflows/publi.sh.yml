@@ -24,7 +24,7 @@ jobs:
         run: |
           mkdir -p .pandoc/include
           touch .pandoc/include/after-body.html
-          echo -e "<hr />\n<span style=\"font-size: small; font-style: italic;\">\n\t<a href=\"https://www.github.com/subcurmudgeon/publi.sh\" target=\"_blank\">publi.sh</a> &rarr; <a href=\"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\" target=\"_blank\">$(echo $GITHUB_SHA | cut -c 1-7)</a>\n$(date)\n</span>" >> .pandoc/include/after-body.html
+          echo -e "<hr />\n<p style=\"font-size: small; font-style: italic;\">\n\t<a href=\"https://www.github.com/subcurmudgeon/publi.sh\" target=\"_blank\">publi.sh</a> &rarr; <a href=\"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\" target=\"_blank\">$(echo $GITHUB_SHA | cut -c 1-7)</a><br />$(date --iso-8601=seconds)\n</p>" >> .pandoc/include/after-body.html
 
       # Run the latest version of publi.sh from Github with any necessary arguments.
       # https://github.com/subcurmudgeon/publi.sh
