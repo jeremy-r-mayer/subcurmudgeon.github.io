@@ -44,7 +44,7 @@ jobs:
           -p "--title-prefix=subcurmudgeon" \
           -p "--to=html" \
           -p "--toc" \
-          -p "--toc-depth=1" \
+          -p "--toc-depth=2" \
           -v \
           . \
           .site
