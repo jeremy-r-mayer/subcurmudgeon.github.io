@@ -1,3 +1,7 @@
+---
+title: My Recipe Collection
+---
+
 ## Biscotti
 
 Basically a crunchy sponge for tea and coffee.
