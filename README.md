@@ -1,3 +1,7 @@
+---
+toc: false
+---
+
 # Hi.
 Some of these things I expect I'll forget.
 
