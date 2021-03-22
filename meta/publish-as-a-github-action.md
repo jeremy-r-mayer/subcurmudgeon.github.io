@@ -1,7 +1,5 @@
 ---
 title: Publi.sh as a Github Action
-subtitle: automated publishing with pandoc
-date: 06 March 2021
 ---
 
 This is the Workflow I use to rebuild this site whenever I push changes to the repository.
@@ -9,8 +7,11 @@ This is the Workflow I use to rebuild this site whenever I push changes to the r
 Descriptions of the steps are as follows:
 
 1. **Install Pandoc** - Some bash-fu downloads the latest pandoc amd64 release and installs it.
+
 2. **Append Workflow Link** - This step isn't required, but I find it useful. A link to the publi.sh repository and the current action run ID are appended to the included pandoc `after-body.html` HTML snippet.
+
 3. **Publi.sh** - Since no configuration is required, the publi.sh script is run directly from the repository using wget and output is directed into the `.site` directory.
+
 4. **Deploy** - The contents of the `.site` directory are pushed to Github Pages.
 
 ```yaml
@@ -40,7 +41,7 @@ jobs:
         run: |
           mkdir -p .pandoc/include
           touch .pandoc/include/after-body.html
-          echo -e "<hr />\n<span style=\"font-size: small; font-style: italic;\">\n\t<a href=\"https://www.github.com/subcurmudgeon/publi.sh\" target=\"_blank\">publi.sh</a> &rarr; <a href=\"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\" target=\"_blank\">$(echo $GITHUB_SHA | cut -c 1-7)</a>\n</span>" >> .pandoc/include/after-body.html
+          echo -e "<hr />\n<p style=\"font-size: small; font-style: italic;\">\n\t$(date --iso-8601=seconds)\n\t<br />\n\t<a href=\"https://www.github.com/subcurmudgeon/publi.sh\" target=\"_blank\">publi.sh</a> &rarr; <a href=\"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\" target=\"_blank\">$(echo $GITHUB_SHA | cut -c 1-7)</a>\n</p>" >> .pandoc/include/after-body.html
 
       # Run the latest version of publi.sh from Github with any necessary arguments.
       # https://github.com/subcurmudgeon/publi.sh
