@@ -12,3 +12,11 @@ Some of these things I expect I'll forget.
 - [Subcurmudgeon](https://www.github.com/subcurmudgeon/subcurmudgeon.github.io)
 - [Publi.sh](https://www.github.com/subcurmudgeon/publi.sh)
 - [Hexbright Firmware](https://www.github.com/subcurmudgeon/hexbright-firmware)
+
+---
+
+|||
+|:-|-:|
+| [Biscotti](/recipe/biscotti.html) | #baking #recipe |
+| [Bread](/recipe/bread.html) | #baking #recipe |
+| [Soft Pretzels](/recipe/soft-pretzels.html) | #baking #recipe |
