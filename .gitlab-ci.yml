@@ -16,12 +16,12 @@ link-workflow:
     echo -e "<hr />\n<p style=\"font-size: small; font-style: italic;\">\n\t<a href=\"https://www.gitlab.com/01001010/publi.sh\" target=\"_blank\">publi.sh</a> &rarr; <a href=\"$CI_PIPELINE_URL\" target=\"_blank\">$(echo $CI_COMMIT_SHA | cut -c 1-7)</a>\n</p>" >> .pandoc/include/after-body.html
 
 pages:
-  stage: publish
   artifacts:
     paths:
       - "public"
   only:
-    - master
+    - main
+  stage: publish
   script: |
     wget -qO - https://gitlab.com/01001010/publi-sh/-/raw/main/publi.sh | bash -s -- \
     -i README.md \
