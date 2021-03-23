@@ -9,14 +9,5 @@ Some of these things I expect I'll forget.
 - [Lorem Ipsum](/meta/lorem-ipsum.html)
 
 ###### Projects
-- [Subcurmudgeon](https://www.github.com/subcurmudgeon/subcurmudgeon.github.io)
-- [Publi.sh](https://www.github.com/subcurmudgeon/publi.sh)
-- [Hexbright Firmware](https://www.github.com/subcurmudgeon/hexbright-firmware)
-
----
-
-| Note | Tag |
-|:-----|----:|
-| [Biscotti](/recipes/biscotti.html) | #recipe |
-| [Bread](/recipes/bread.html) | #recipe |
-| [Soft Pretzels](/recipes/soft-pretzels.html) | #recipe |
+- [Publi.sh](https://www.github.com/subcurmudgeon/publi.sh) - A [pandoc](https://pandoc.org) wrapper written in Bash.
+- [Hexbright](https://www.github.com/subcurmudgeon/hexbright-firmware) - Firmware for the Hexbright flashlight.

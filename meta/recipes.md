@@ -2,9 +2,10 @@
 title: Recipe Collection
 ---
 
-These recipes have been pilfered from forgotten sources and bastardized to my personal tastes.
+Most these recipes have been pilfered from long-forgotten sources and twisted to taste.
 
-###### Baking
-1. [Biscotti](/recipes/biscotti.html)
-2. [Bread](/recipes/bread.html)
-3. [Soft Pretzels](/recipes/soft-pretzels.html)
+| Recipe | Tag |
+|:-------|----:|
+| [Biscotti](/recipes/biscotti.html) | #baking |
+| [Bread](/recipes/bread.html) | #baking |
+| [Soft Pretzels](/recipes/soft-pretzels.html) | #baking |
