@@ -15,5 +15,6 @@ Some of these things I expect I'll forget.
 
 ###### Social, Etc.
 - [Facebook](https://www.facebook.com/jeremy.r.mayer)
-- [Github](https://www.github.com/jeremy.r.mayer)
+- [Github](https://www.github.com/jeremy-r-mayer)
 - [Instagram](https://www.instagram.com/jeremy.r.mayer)
+- [Twitter](https://www.twitter.com/jeremy.r.mayer)
