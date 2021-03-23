@@ -1,28 +1,18 @@
-stages:
-  - preflight
-  - publish
-  
-install-pandoc:
-  stage: preflight
-  script: |
-    wget --quiet --output-document=".pandoc-latest-amd64.deb" $(wget -qO - https://api.github.com/repos/jgm/pandoc/releases | grep browser_download_url | grep '64[.]deb' | head -n 1 | cut -d '"' -f 4)
-    dpkg -i .pandoc-latest-amd64.deb
-
-link-workflow:
-  stage: preflight
-  script: |
-    mkdir -p .pandoc/include
-    touch .pandoc/include/after-body.html
-    echo -e "<hr />\n<p style=\"font-size: small; font-style: italic;\">\n\t<a href=\"https://www.gitlab.com/01001010/publi.sh\" target=\"_blank\">publi.sh</a> &rarr; <a href=\"$CI_PIPELINE_URL\" target=\"_blank\">$(echo $CI_COMMIT_SHA | cut -c 1-7)</a>\n</p>" >> .pandoc/include/after-body.html
-
 pages:
   artifacts:
     paths:
       - "public"
   only:
     - main
-  stage: publish
   script: |
+    # Install Pandoc
+    wget --quiet --output-document=".pandoc-latest-amd64.deb" $(wget -qO - https://api.github.com/repos/jgm/pandoc/releases | grep browser_download_url | grep '64[.]deb' | head -n 1 | cut -d '"' -f 4)
+    dpkg -i .pandoc-latest-amd64.deb
+    # Link Workflow
+    mkdir -p .pandoc/include
+    touch .pandoc/include/after-body.html
+    echo -e "<hr />\n<p style=\"font-size: small; font-style: italic;\">\n\t<a href=\"https://www.gitlab.com/01001010/publi.sh\" target=\"_blank\">publi.sh</a> &rarr; <a href=\"$CI_PIPELINE_URL\" target=\"_blank\">$(echo $CI_COMMIT_SHA | cut -c 1-7)</a>\n</p>" >> .pandoc/include/after-body.html
+    # Publi.sh
     wget -qO - https://gitlab.com/01001010/publi-sh/-/raw/main/publi.sh | bash -s -- \
     -i README.md \
     -p "--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css" \
