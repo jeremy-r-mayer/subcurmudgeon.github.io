@@ -17,6 +17,6 @@ Some of these things I expect I'll forget.
 
 | Note | Tag |
 |:-----|----:|
-| [Biscotti](/recipe/biscotti.html) | #baking #recipe |
-| [Bread](/recipe/bread.html) | #baking #recipe |
-| [Soft Pretzels](/recipe/soft-pretzels.html) | #baking #recipe |
+| [Biscotti](/recipes/biscotti.html) | #recipe |
+| [Bread](/recipes/bread.html) | #recipe |
+| [Soft Pretzels](/recipes/soft-pretzels.html) | #recipe |
