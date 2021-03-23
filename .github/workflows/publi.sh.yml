@@ -24,13 +24,13 @@ jobs:
         run: |
           mkdir -p .pandoc/include
           touch .pandoc/include/after-body.html
-          echo -e "<hr />\n<p style=\"font-size: small; font-style: italic;\">\n\t<a href=\"https://www.github.com/jeremy-r-mayer/publi.sh\" target=\"_blank\">publi.sh</a> &rarr; <a href=\"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\" target=\"_blank\">$(echo $GITHUB_SHA | cut -c 1-7)</a>\n</p>" >> .pandoc/include/after-body.html
+          echo -e "<hr />\n<p style=\"font-size: small; font-style: italic;\">\n\t<a href=\"https://www.github.com/jrmyrmyr/publi.sh\" target=\"_blank\">publi.sh</a> &rarr; <a href=\"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\" target=\"_blank\">$(echo $GITHUB_SHA | cut -c 1-7)</a>\n</p>" >> .pandoc/include/after-body.html
 
       # Run the latest version of publi.sh from Github with any necessary arguments.
       # https://github.com/subcurmudgeon/publi.sh
       - name: Publi.sh
         run: |
-          wget -qO - https://raw.githubusercontent.com/jeremy-r-mayer/publi.sh/main/publi.sh | bash -s -- \
+          wget -qO - https://raw.githubusercontent.com/jrmyrmyr/publi.sh/main/publi.sh | bash -s -- \
           -i README.md \
           -p "--css=https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css" \
           -p "--from=markdown+backtick_code_blocks+definition_lists+emoji+fancy_lists+fenced_code_attributes+line_blocks+markdown_in_html_blocks+task_lists+yaml_metadata_block" \
