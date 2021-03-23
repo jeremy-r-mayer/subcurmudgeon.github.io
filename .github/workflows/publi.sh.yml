@@ -27,7 +27,7 @@ jobs:
           echo -e "<hr />\n<p style=\"font-size: small; font-style: italic;\">\n\t<a href=\"https://www.github.com/jrmyrmyr/publi.sh\" target=\"_blank\">publi.sh</a> &rarr; <a href=\"$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID\" target=\"_blank\">$(echo $GITHUB_SHA | cut -c 1-7)</a>\n</p>" >> .pandoc/include/after-body.html
 
       # Run the latest version of publi.sh from Github with any necessary arguments.
-      # https://github.com/subcurmudgeon/publi.sh
+      # https://github.com/jrmyrmyr/publi.sh
       - name: Publi.sh
         run: |
           wget -qO - https://raw.githubusercontent.com/jrmyrmyr/publi.sh/main/publi.sh | bash -s -- \
