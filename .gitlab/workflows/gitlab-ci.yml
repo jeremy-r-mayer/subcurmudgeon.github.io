@@ -1,3 +1,6 @@
+# Note: Gitlab looks for this file in the repository root by default.
+# Repository Settings -> CI/CD -> General Pipelines -> CI/CD configuration file
+
 pages:
   artifacts:
     paths:
