@@ -3,9 +3,11 @@ title: Hi.
 subtitle: Some of these things I expect I'll forget.
 ---
 
-This is my virtual space, meant to be filled with things for sharing and remembrance. It may not be updated often, or interesting to anyone other than myself, but it's here nonetheless because I find it useful. Please feel free to look around.
+This is my virtual space, meant to be filled with things for sharing and remembrance. It may not be updated often or interesting to anyone other than myself, but it's here nonetheless because I want it to be.
 
-If you're interested in how this site is made, see [der springenwerk](/meta/der-springenwerk.html).
+Please feel free to look around.
+
+If you enjoy tinkering around with things and are interested in how this site is made, visit [der springenwerk](/meta/der-springenwerk.html).
 
 ---
 
