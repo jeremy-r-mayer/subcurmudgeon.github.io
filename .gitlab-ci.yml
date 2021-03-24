@@ -28,7 +28,7 @@ pages:
     -p "--quiet" \
     -p "--standalone" \
     -p "--template=.pandoc/templates/default.html" \
-    -p "--title-prefix=subcurmudgeon" \
+    -p "--title-prefix=jeremy r.m." \
     -p "--to=html" \
     -v \
     . \
