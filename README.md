@@ -7,7 +7,7 @@ This is my virtual space, meant to be filled with things for sharing and remembr
 
 Please feel free to look around.
 
-If you enjoy tinkering around with things and are interested in how this site is made, visit [der springenwerk](/meta/der-springenwerk.html).
+If you're interested in how this site is made, visit [der springenwerk](/meta/der-springenwerk.html).
 
 ---
 
