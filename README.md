@@ -3,7 +3,7 @@ title: Hi.
 subtitle: Some of these things I expect I'll forget.
 ---
 
-This is my virtual space, meant to be filled with things for sharing and remembrance. It may not be updated often or interesting to anyone other than myself, but it's here nonetheless because I want it to be.
+This is my virtual space, meant to be filled with things for sharing and remembrance. It may not be updated often, or even interesting to anyone other than myself, but it's here nonetheless so perhaps you'll find something useful.
 
 Please feel free to look around.
 
