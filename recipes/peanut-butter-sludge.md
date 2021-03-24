@@ -1,6 +1,6 @@
 ---
 title: Peanut Butter Sludge
-subtitle: Quick, simple, surprisingly delicious.
+subtitle: It's people *and* peanut butter!
 ---
 
 ## Equipment
