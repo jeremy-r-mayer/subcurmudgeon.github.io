@@ -82,6 +82,12 @@
   font-display: swap;
 }
 
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 /* -- New.CSS overrides - https://github.com/xz/new.css */
 
 @media (prefers-color-scheme: dark) {
@@ -125,7 +131,6 @@ a {
 
 code {
   border: none;
-  color: var(--nc-ac-1);
   font-size: 1rem;
   padding: 1px 3px;
 }
@@ -165,6 +170,10 @@ p.date {
 
 /* -- Other - https://sbcn.me -- */
 
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
 p.sitetitle {
   font-size: large;
   font-weight: bold;
@@ -181,7 +190,7 @@ p.sitetitle > a {
 
 <header id="title-block-header">
 <p class="sitetitle">
-  <a href="/">🌌 01001010...</a>
+  <a href="/">🌌 01001010...<span class="blink">&#9475;</span></a>
 </p>
 <h1 class="title">Lorem Ipsum</h1>
 <p class="subtitle">Because waiting on content sucks.</p>
@@ -199,7 +208,7 @@ p.sitetitle > a {
 
 <hr />
 <p style="font-size: small; font-style: italic;">
-	<a href="https://www.github.com/jeremy-rm/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/jeremy-rm/jeremy-rm.github.io/actions/runs/687179014" target="_blank">f4246c5</a>
+	<a href="https://www.github.com/jeremy-rm/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/jeremy-rm/jeremy-rm.github.io/actions/runs/687255060" target="_blank">a59b7bf</a>
 </p>
 
 </body>
