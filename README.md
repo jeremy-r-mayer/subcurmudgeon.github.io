@@ -1,9 +1,7 @@
 ---
-title: Hi.
-subtitle: Some of these things I expect I'll forget.
+title: Hello.
+subtitle: This is a space for the things I share and the things I expect to forget.
 ---
-
-This is my virtual space, meant to be filled with things for sharing and remembrance. It may not be updated often, or even interesting to anyone other than myself, but it's here nonetheless so perhaps you'll find something useful.
 
 Please feel free to look around.
 
