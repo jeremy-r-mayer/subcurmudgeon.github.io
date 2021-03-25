@@ -1,7 +1,9 @@
 ---
-title: Hello.
-subtitle: This is a space for the things I share and the things I expect to forget.
+title: Hello,
+subtitle: My name is Jeremy.
 ---
+
+This is a space to share some things, and for things I expect I'd forget.
 
 Please feel free to look around.
 
