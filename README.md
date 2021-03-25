@@ -11,7 +11,7 @@ This is a multi-purpose virtual space, intended for, but not limited to:
 
 If you're interested in how this site is made, visit [der springenwerk](/meta/der-springenwerk.html).
 
-If you wish, you may contact me [thusly](mailto:jeremy@0x4A.org).
+I can be contacted [thusly](mailto:jeremy@0x4A.org?subject=Hi!).
 
 ---
 
