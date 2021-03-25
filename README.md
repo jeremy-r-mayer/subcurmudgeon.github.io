@@ -1,9 +1,9 @@
 This is a multi-purpose virtual space intended for, but not limited to:
 
 - shouting into the endless void
-- documenting things I expect to forget
+- documenting things I expect to forget before it's too late
 - malignant nostalgia
-- photos of my dog, may he rest in peace
+- pet photos
 
 If you're interested in how this site is made, visit [der springenwerk](/meta/der-springenwerk.html).
 
