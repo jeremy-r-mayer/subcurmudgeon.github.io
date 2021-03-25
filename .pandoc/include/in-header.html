@@ -72,6 +72,12 @@
   font-display: swap;
 }
 
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 /* -- New.CSS overrides - https://github.com/xz/new.css */
 
 @media (prefers-color-scheme: dark) {
@@ -115,7 +121,6 @@ a {
 
 code {
   border: none;
-  color: var(--nc-ac-1);
   font-size: 1rem;
   padding: 1px 3px;
 }
@@ -154,6 +159,10 @@ p.date {
 }
 
 /* -- Other - https://sbcn.me -- */
+
+.blink {
+  animation: blinker 1s linear infinite;
+}
 
 p.sitetitle {
   font-size: large;
