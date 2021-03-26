@@ -1,8 +1,11 @@
 ---
-title: Hi.
+subtitle: |
+          | Consummate Curmudgeon,
+          | Sampler of Fine Vices,
+          | & Master Adventurer of the Great Underground Empire.
 ---
 
-This is a multi-purpose virtual space intended for, *but not limited to*:
+This multi-purpose virtual space is intended for, *but not limited to*:
 
 - **shouting into the endless void**
 - **documenting things I expect to forget**
