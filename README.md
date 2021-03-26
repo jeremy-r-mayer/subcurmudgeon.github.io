@@ -1,8 +1,8 @@
-This is a multi-purpose virtual space intended for, but not limited to:
+This is a multi-purpose virtual space intended for, *but not limited to*:
 
-- shouting into the endless void
-- documenting things I expect to forget
-- malignant nostalgia
+- **shouting into the endless void**
+- **documenting things I expect to forget**
+- **malignant nostalgia**
 
 If you're interested in how this site is made, visit [der springenwerk](/meta/der-springenwerk.html).
 
