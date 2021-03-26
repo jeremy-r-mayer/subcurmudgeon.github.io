@@ -1,4 +1,7 @@
 ---
+title: |
+  | A very, very long,
+  | extremely long title.
 subtitle: |
   | Consummate Curmudgeon,
   | Sampler of Fine Vices,
