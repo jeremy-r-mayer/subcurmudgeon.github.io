@@ -8,7 +8,7 @@ This is a multi-purpose virtual space intended for, *but not limited to*:
 
 If you're interested in how this site is made, visit [der springenwerk](/meta/der-springenwerk.html).
 
-I can be contacted [*thusly* &#9993;](mailto:jeremy@01001010.net?subject=Hi!).
+I can be contacted [*thusly:* :envelope:](mailto:jeremy@01001010.net?subject=Hi!)
 
 ---
 
