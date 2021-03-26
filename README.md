@@ -1,8 +1,8 @@
 ---
 subtitle: |
-          | Consummate Curmudgeon,
-          | Sampler of Fine Vices,
-          | & Master Adventurer of the Great Underground Empire.
+  Consummate Curmudgeon,
+  Sampler of Fine Vices,
+  & Master Adventurer of the Great Underground Empire.
 ---
 
 This multi-purpose virtual space is intended for, *but not limited to*:
