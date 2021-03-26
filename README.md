@@ -8,6 +8,8 @@ This is a multi-purpose virtual space intended for, *but not limited to*:
 - **documenting things I expect to forget**
 - **malignant nostalgia**
 
+<br />
+
 If you're interested in how this site is made, visit [der springenwerk](/meta/der-springenwerk.html).
 
 I can be contacted *[thusly](mailto:jeremy@0x4A.org?subject=Hi!)*.
