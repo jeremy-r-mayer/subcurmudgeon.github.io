@@ -9,17 +9,17 @@ subtitle: It's people *and* peanut butter!
 ---
 
 ## Ingredients
-- 1 cup `Original Soylent Powder`[^1] or `Cacao Soylent Powder`[^2]
-- 1/4 cup `Peanut Butter Powder`
-- 1 tablespoon `Maple Syrup`
+- 1 cup Original Soylent Powder[^1] or Cacao Soylent Powder[^2]
+- 1/4 cup Peanut Butter Powder
+- 1 tablespoon Maple Syrup
 - Water
 
 ---
 
 ## Directions
-1. Put `Soylent`, `peanut butter powder`, and `maple syrup` into blender or leak-proof container.
+1. Put ==Soylent==, ==peanut butter powder==, and ==maple syrup== into blender or leak-proof container.
 
-2. Add desired amount of `water`.
+2. Add desired amount of ==water==.
 
 3. Blend or shake until smooth.
 
