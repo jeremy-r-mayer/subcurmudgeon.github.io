@@ -63,7 +63,16 @@ h1.title {
 }
 
 h2.subtitle {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.25rem;
+  opacity: 0.5;
+  padding-top: 0;
+}
+
+h1.title + h2.subtitle {
   font-size: large;
+  font-weight: bold;
   line-height: 1.5rem;
   opacity: 0.5;
   padding-top: 0;
@@ -84,11 +93,6 @@ nav {
 }
 
 /* -- Pandoc - https://pandoc.org -- */
-
-p.subtitle {
-  font-size: large;
-  opacity: 0.5;
-}
 
 p.author {
   font-size: large;
