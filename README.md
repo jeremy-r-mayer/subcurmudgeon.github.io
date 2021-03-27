@@ -13,7 +13,7 @@ This multi-purpose virtual space is intended for, *but not limited to*:
 
 If you're interested in how this site is made, visit [der springenwerk](/meta/der-springenwerk.html).
 
-I can be contacted [*thusly:* :envelope:](mailto:jeremy@01001010.net?subject=Hi!)
+I can be contacted [thusly](mailto:jeremy@01001010.net?subject=Hi!).
 
 ---
 
