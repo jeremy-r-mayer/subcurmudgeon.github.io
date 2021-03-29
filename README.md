@@ -35,8 +35,10 @@ I can be contacted [thusly](mailto:jeremy@01001010.net?subject=Hi!).
 - [Publi.sh](https://www.github.com/subcurmudgeon/publi.sh)
 - [Hexbright Firmware](https://www.github.com/subcurmudgeon/hexbright-firmware)
 
+<!--
 ##### Unsorted
 - [Cloudflare DDNS](/unsorted/cloudflare-ddns.html)
 - [Console Twitter Trends](/unsorted/twittertrends.html)
 - [PiStatus](/unsorted/pistatus.html)
 - [PiTemps](/unsorted/pitemps.html)
+-->
