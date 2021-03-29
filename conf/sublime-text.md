@@ -1,11 +1,9 @@
 ---
-title: Sublime HQ
+title: Sublime Text
 subtitle: Configs & Packages
 ---
 
-## Sublime Text
-
-### Config (ST4 Beta)
+## Config (ST4 Beta)
 
 ```json
 {
@@ -26,7 +24,7 @@ subtitle: Configs & Packages
 }
 ```
 
-### Packages
+## Packages
 
 - [packagecontrol.io](https://packagecontrol.io) - Package manager.
 - [RemoteSubl](https://github.com/randy3k/RemoteSubl) - Allows remote editing via SSH tunnel with [rmate](https://github.com/aurora/rmate).

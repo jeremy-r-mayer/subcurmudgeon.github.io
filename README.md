@@ -18,7 +18,10 @@ I can be contacted [thusly](mailto:jeremy@01001010.net?subject=Hi!).
 ---
 
 ##### Configs
+- PiVPN
+- PiHole
 - [Sublime Text](/conf/sublime-text.html)
+- Wireguard
 
 ##### Meta
 - [Der Springenwerk](/meta/der-springenwerk.html)
@@ -27,6 +30,13 @@ I can be contacted [thusly](mailto:jeremy@01001010.net?subject=Hi!).
 ##### Misc
 - [Recipe Collection](/misc/recipes.html)
 
+
 ##### Projects
 - [Publi.sh](https://www.github.com/subcurmudgeon/publi.sh)
 - [Hexbright Firmware](https://www.github.com/subcurmudgeon/hexbright-firmware)
+
+##### Unsorted
+- [Cloudflare DDNS](/unsorted/cloudflare-ddns.html)
+- [Console Twitter Trends](/unsorted/twittertrends.html)
+- [PiStatus](/unsorted/pistatus.md)
+- [PiTemps](/unsorted/pitemps.md)
