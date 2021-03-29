@@ -17,10 +17,13 @@ I can be contacted [thusly](mailto:jeremy@01001010.net?subject=Hi!).
 
 ---
 
-###### Meta
+##### Meta
 - [Recipe Collection](/meta/recipes.html)
 - [Lorem Ipsum](/meta/lorem-ipsum.html)
 
-###### Projects
+##### Misc
+- [Sublime Text Packages](/misc/sublime-text.html)
+
+##### Projects
 - [Publi.sh](https://www.github.com/subcurmudgeon/publi.sh)
 - [Hexbright Firmware](https://www.github.com/subcurmudgeon/hexbright-firmware)
