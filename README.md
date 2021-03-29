@@ -17,12 +17,15 @@ I can be contacted [thusly](mailto:jeremy@01001010.net?subject=Hi!).
 
 ---
 
+##### Configs
+- [Sublime Text](/conf/sublime-text.html)
+
 ##### Meta
-- [Recipe Collection](/meta/recipes.html)
+- [Der Springenwerk](/meta/der-springenwerk.html)
 - [Lorem Ipsum](/meta/lorem-ipsum.html)
 
 ##### Misc
-- [Sublime Text Packages](/misc/sublime-text.html)
+- [Recipe Collection](/misc/recipes.html)
 
 ##### Projects
 - [Publi.sh](https://www.github.com/subcurmudgeon/publi.sh)
