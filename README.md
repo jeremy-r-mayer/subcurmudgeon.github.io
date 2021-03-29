@@ -38,5 +38,5 @@ I can be contacted [thusly](mailto:jeremy@01001010.net?subject=Hi!).
 ##### Unsorted
 - [Cloudflare DDNS](/unsorted/cloudflare-ddns.html)
 - [Console Twitter Trends](/unsorted/twittertrends.html)
-- [PiStatus](/unsorted/pistatus.md)
-- [PiTemps](/unsorted/pitemps.md)
+- [PiStatus](/unsorted/pistatus.html)
+- [PiTemps](/unsorted/pitemps.html)
