@@ -26,6 +26,7 @@ I can be contacted [thusly](mailto:jeremy@01001010.net?subject=Hi!).
 ##### Meta
 - [Der Springenwerk](/meta/der-springenwerk.html)
 - [Lorem Ipsum](/meta/lorem-ipsum.html)
+- [Obsidian Vault](/obsidian-vault/Meta/Index.html)
 
 ##### Misc
 - [Recipe Collection](/misc/recipes.html)
