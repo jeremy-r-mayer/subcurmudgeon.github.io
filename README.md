@@ -33,8 +33,8 @@ I can be contacted [thusly](mailto:jeremy@01001010.net?subject=Hi!).
 
 
 ##### Projects
-- [Publi.sh](https://www.github.com/subcurmudgeon/publi.sh)
-- [Hexbright Firmware](https://www.github.com/subcurmudgeon/hexbright-firmware)
+- [Publi.sh](https://www.github.com/jeremy-rm/publi.sh)
+- [Hexbright Firmware](https://www.github.com/jeremy-rm/hexbright-firmware)
 
 <!--
 ##### Unsorted
