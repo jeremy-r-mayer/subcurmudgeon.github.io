@@ -31,7 +31,7 @@ pages:
     -p "--quiet" \
     -p "--standalone" \
     -p "--template=.pandoc/templates/default.html" \
-    -p "--title-prefix=jeremy r.m." \
+    -p "--title-prefix=jeremy.rm" \
     -p "--to=html" \
     -v \
     . \
