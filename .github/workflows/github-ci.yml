@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  'Publi.sh':
+  publi.sh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
