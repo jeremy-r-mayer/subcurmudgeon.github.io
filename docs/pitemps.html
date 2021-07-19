@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-<title>jeremy.rm – Console Twitter Trends</title>
+<title>jeremy.rm – PiTemps</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css" />
 <style>
 
@@ -140,23 +140,26 @@ p.sitetitle + div.line-block {
 <p class="sitetitle">
   <a href="/">jeremy.rm &mdash;</a>
 </p>
-<h1 class="title">Console Twitter Trends</h1>
+<h1 class="title">PiTemps</h1>
 </header>
 
   
   
-<p>Top 50 Twitter trends on the console.</p>
+<p>Report Raspberry Pi CPU and GPU temperatures.</p>
 <pre class="shell"><code>#!/bin/bash
 
-echo &quot;Twitter Trends:&quot;
-curl -s -X GET -H &quot;Authorization: Bearer &lt;API TOKEN HERE&gt;&quot; https://api.twitter.com/1.1/trends/place.json?id=23424977 | \jq -r .[0].trends[].name | \
-nl | \
-column</code></pre>
+CPU=&quot;$(cat /sys/class/thermal/thermal_zone0/temp | cut -c1-2).$(cat /sys/class/thermal/thermal_zone0/temp | cut -c3-5)&quot;
+GPU=&quot;$(/opt/vc/bin/vcgencmd measure_temp | cut -c6-9)&quot;
+
+printf &quot;\e[96m%-5s %10s %10s\e[0m\n&quot; &quot;Zone&quot; &quot;Celcius&quot; &quot;Fahrenheit&quot;
+echo -e &quot;\e[96m---------------------------\e[0m&quot;
+printf &quot;%-5s %10.2f %10.2f\n&quot; &quot;CPU&quot; &quot;${CPU}&quot; &quot;$(echo &quot;${CPU} * 1.8 + 32.0&quot; | bc)&quot;
+printf &quot;%-5s %10.2f %10.2f\n&quot; &quot;GPU&quot; &quot;${GPU}&quot; &quot;$(echo &quot;${GPU} * 1.8 + 32.0&quot; | bc)&quot;</code></pre>
 
 
 <hr />
 <p style="font-size: small; font-style: italic;">
-	<a href="https://www.github.com/jeremy-rm/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/jeremy-rm/jeremy-rm.github.io/actions/runs/1043791447" target="_blank">1408166</a>
+	<a href="https://www.github.com/jeremy-rm/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/jeremy-rm/jeremy-rm.github.io/actions/runs/1043842790" target="_blank">90b5420</a>
 </p>
 
 </body>

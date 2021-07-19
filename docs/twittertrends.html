@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-<title>jeremy.rm – PiStatus</title>
+<title>jeremy.rm – Console Twitter Trends</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css" />
 <style>
 
@@ -140,24 +140,23 @@ p.sitetitle + div.line-block {
 <p class="sitetitle">
   <a href="/">jeremy.rm &mdash;</a>
 </p>
-<h1 class="title">PiStatus</h1>
+<h1 class="title">Console Twitter Trends</h1>
 </header>
 
   
   
-<p>A tmux shortcut for monitoring a Raspberry Pi with PiHole.</p>
-<pre class="shell"><code>#!/bin/sh
+<p>Top 50 Twitter trends on the console with curl.</p>
+<pre class="shell"><code>#!/bin/bash
 
-tmux new-session -d -s &quot;pistatus&quot;
-tmux send-keys -t 0 &quot;pihole -t&quot; &quot;C-m&quot;
-tmux split-window -v &quot;htop&quot;
-tmux resize-pane -U 5
-tmux -2 attach-session -t pistatus</code></pre>
+echo &quot;Twitter Trends:&quot;
+curl -s -X GET -H &quot;Authorization: Bearer &lt;API TOKEN HERE&gt;&quot; https://api.twitter.com/1.1/trends/place.json?id=23424977 | \jq -r .[0].trends[].name | \
+nl | \
+column</code></pre>
 
 
 <hr />
 <p style="font-size: small; font-style: italic;">
-	<a href="https://www.github.com/jeremy-rm/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/jeremy-rm/jeremy-rm.github.io/actions/runs/1043791447" target="_blank">1408166</a>
+	<a href="https://www.github.com/jeremy-rm/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/jeremy-rm/jeremy-rm.github.io/actions/runs/1043842790" target="_blank">90b5420</a>
 </p>
 
 </body>
