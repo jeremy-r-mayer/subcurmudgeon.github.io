@@ -12,9 +12,3 @@ This multi-purpose virtual space is intended for, *but not limited to*:
 - **malignant nostalgia**
 
 I can be contacted [thusly](mailto:jeremy.rm@01001010.net?subject=Hi!).
-
----
-
-##### Projects
-- [Publi.sh](https://www.github.com/jeremy-rm/publi.sh)
-- [Hexbright Firmware](https://www.github.com/jeremy-rm/hexbright-firmware)
