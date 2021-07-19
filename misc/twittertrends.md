@@ -2,7 +2,7 @@
 title: Console Twitter Trends
 ---
 
-Top 50 Twitter trends on the console.
+Top 50 Twitter trends on the console with curl.
 
 ```shell
 #!/bin/bash
