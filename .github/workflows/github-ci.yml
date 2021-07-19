@@ -45,6 +45,7 @@ jobs:
           -p "--template=.pandoc/templates/default.html" \
           -p "--title-prefix=jeremy.rm" \
           -p "--to=html" \
+          -t "tree/index.html"
           -v \
           . \
           .site
