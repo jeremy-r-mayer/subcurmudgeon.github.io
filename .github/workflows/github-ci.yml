@@ -24,7 +24,8 @@ jobs:
       # Install the tree package, no frills.
       - name: Install Tree
         run: |
-          sudo apt install tree
+          sudo apt-get install tree
+          which tree
 
       # Append a link to this action workflow into the after-body.html template.
       # https://docs.github.com/en/actions/reference/environment-variables
