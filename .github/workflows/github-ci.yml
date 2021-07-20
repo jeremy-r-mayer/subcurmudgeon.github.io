@@ -58,6 +58,7 @@ jobs:
       # Use the 'tree' utility to generate something resembling a sitemap.
       - name: Tree
         run: |
+          mkdir -p .site/tree
           tree -C -H "" ".site/*" > .site/tree/index.html
 
       # Deploy final output to Github Pages.
