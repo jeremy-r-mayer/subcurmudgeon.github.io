@@ -21,12 +21,6 @@ jobs:
           wget --quiet --output-document=".pandoc-latest-amd64.deb" $(wget -qO - https://api.github.com/repos/jgm/pandoc/releases | grep browser_download_url | grep '64[.]deb' | head -n 1 | cut -d '"' -f 4)
           sudo dpkg -i .pandoc-latest-amd64.deb
 
-      # Install the tree package, no frills.
-      - name: Install Tree
-        run: |
-          sudo apt-get install tree
-          which tree
-
       # Append a link to this action workflow into the after-body.html template.
       # https://docs.github.com/en/actions/reference/environment-variables
       - name: Link Workflow
