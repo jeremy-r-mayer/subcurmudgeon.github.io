@@ -51,11 +51,15 @@ jobs:
           -p "--template=.pandoc/templates/default.html" \
           -p "--title-prefix=jeremy.rm" \
           -p "--to=html" \
-          -t ".site/tree/index.html" \
           -v \
           . \
           .site
       
+      # Use the 'tree' utility to generate something resembling a sitemap.
+      - name: Tree
+        run: |
+          tree -C -H "" ".site/*" > .site/tree/index.html
+
       # Deploy final output to Github Pages.
       # https://github.com/peaceiris/actions-gh-pages
       - name: Deploy
