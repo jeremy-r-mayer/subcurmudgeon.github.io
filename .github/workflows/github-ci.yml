@@ -59,7 +59,7 @@ jobs:
       - name: Tree
         run: |
           mkdir -p .site/tree
-          tree -C -H "" ".site/*" > .site/tree/index.html
+          tree -C -H "" .site/ > .site/tree/index.html
 
       # Deploy final output to Github Pages.
       # https://github.com/peaceiris/actions-gh-pages
