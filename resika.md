@@ -1,6 +1,6 @@
 ---
-title: Resika's Very Long Post
-subtitle: For your viewing pleasure.
+title: "Resika's Very Long Post"
+subtitle: "For your viewing pleasure."
 ---
 
 First of all I’m very excited for this game! Crafting and gathering seem to be a large part of the game, and that is MY JAM. I played in the Preview for over 75 hours, and I’m up to about 190 hours now. A vast majority of that time was messing around with the gathering and crafting, poking the mission boards, and questing. A small amount of time was idling while poking around at stats and data to see what was broken or not working correct, and gathering info to make guides (or at least get them started and add live values later.) I did not participate in PVP, as PVP is not my main goal or one of the things I particularly enjoy - I do look forward to eventually playing with the invasions and the wars, I didn’t level up enough to do so in this Beta, however.
