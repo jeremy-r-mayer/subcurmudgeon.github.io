@@ -5,6 +5,12 @@ subtitle: |
   | & Master Adventurer of the Great Underground Empire.
 ---
 
+<style>
+ol ul::marker {
+  content: "★";
+}
+</style>
+
 This multi-purpose virtual space is intended for, *but not limited to*:
 
 - **shouting into the endless void**
