@@ -6,7 +6,7 @@ subtitle: |
 ---
 
 <style>
-ol ul::marker {
+ul li::marker {
   content: "★";
 }
 </style>
