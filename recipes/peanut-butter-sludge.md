@@ -17,9 +17,9 @@ subtitle: It's people *and* peanut butter!
 ---
 
 ## Directions
-1. Put <mark>Soylent</mark>, <mark>peanut butter powder</mark>, and <mark>maple syrup</mark> into blender or leak-proof container.
+1. Put `Soylent`, `peanut butter powder`, and `maple syrup` into blender or leak-proof container.
 
-2. Add desired amount of <mark>water</mark>.
+2. Add desired amount of `water`.
 
 3. Blend or shake until smooth.
 
