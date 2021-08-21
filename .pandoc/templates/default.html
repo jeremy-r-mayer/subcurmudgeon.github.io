@@ -61,6 +61,22 @@ $endif$
   
 $body$
 
+$if(title)$
+<hr />
+<script src="https://giscus.app/client.js"
+        data-repo="jeremy-rm/jeremy-rm.giscus"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkzOTg2NDA1MjQ="
+        data-category="Giscus"
+        data-category-id="DIC_kwDOF8LFjM4B-w_k"
+        data-mapping="title"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-theme="preferred_color_scheme"
+        crossorigin="anonymous"
+        async>
+</script>
+$endif$
+
 $for(include-after)$
 $include-after$
 $endfor$
