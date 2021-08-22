@@ -1,4 +1,5 @@
 ---
+title: jeremy.rm
 subtitle: |
   | Consummate Curmudgeon,
   | Sampler of Fine Vices,
