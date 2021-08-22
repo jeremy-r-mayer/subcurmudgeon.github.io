@@ -23,7 +23,6 @@ pages:
     # https://gitlab.com/jeremy-rm/publi.sh
     wget -qO - https://gitlab.com/jeremy-rm/publi-sh/-/raw/main/publi.sh | bash -s -- \
     -i README.md \
-    -p "--css=https://unpkg.com/@primer/css@^16.0.0/dist/primer.css" \
     -p "--from=markdown+backtick_code_blocks+definition_lists+emoji+fancy_lists+fenced_code_attributes+line_blocks+markdown_in_html_blocks+task_lists+yaml_metadata_block" \
     -p "--include-after-body=.pandoc/include/after-body.html" \
     -p "--include-before-body=.pandoc/include/before-body.html" \
