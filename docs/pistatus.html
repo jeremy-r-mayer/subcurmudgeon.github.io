@@ -11,21 +11,30 @@
 :root {
 	--background-color: #fdfdfd;
 	--foreground-color: #404040;
+
+	--font-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+	--font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+	--font-monospace:  Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--background-color: #404040;
-		--foreground-color: #fdfdfd;
+		--background-color: #101010;
+		--foreground-color: #d0d0d0;
 	}
 }
 
 body {
 	background-color:  var(--background-color);
 	color: var(--foreground-color);
-	font-family: sans-serif;
+	font-family: var(--font-serif);
 	margin: auto;
 	max-width: 80ch;
+}
+
+h1, h2, h3, h4, h5, h6, header, footer {
+	font-family: var(--font-sans-serif);
 }
 
 </style>
@@ -65,7 +74,7 @@ tmux -2 attach-session -t pistatus</code></pre>
 
 <hr />
 <p style="font-size: small; font-style: italic;">
-	<a href="https://github.com/jeremy-rm/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/jeremy-rm/jeremy-rm.github.io/actions/runs/1156643039" target="_blank">a08673f</a>
+	<a href="https://github.com/jeremy-rm/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/jeremy-rm/jeremy-rm.github.io/actions/runs/1156658514" target="_blank">733c8b7</a>
 </p>
 </footer>
 
