@@ -12,10 +12,9 @@
 	--background-color: #fdfdfd;
 	--foreground-color: #404040;
 
-	--font-sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
-	--font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-	--font-monospace:  Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
-
+	--font-stack-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+	--font-stack-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+	--font-stack-mono:  Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,16 +24,26 @@
 	}
 }
 
+html {
+	font-size:  1vw;
+}
+
+a {
+	color: #5089C6;
+	text-decoration: none;
+}
+
 body {
 	background-color:  var(--background-color);
 	color: var(--foreground-color);
-	font-family: var(--font-serif);
+	font-family: var(--font-stack-serif);
 	margin: auto;
-	max-width: 80ch;
+	max-width: 78ch;
+	padding: 1ch;
 }
 
-h1, h2, h3, h4, h5, h6, header, footer {
-	font-family: var(--font-sans-serif);
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-stack-sans);
 }
 
 </style>
@@ -101,7 +110,7 @@ h1, h2, h3, h4, h5, h6, header, footer {
 
 <hr />
 <p style="font-size: small; font-style: italic;">
-	<a href="https://github.com/jeremy-rm/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/jeremy-rm/jeremy-rm.github.io/actions/runs/1156684051" target="_blank">733c8b7</a>
+	<a href="https://github.com/jeremy-rm/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/jeremy-rm/jeremy-rm.github.io/actions/runs/1156690043" target="_blank">b99d4e5</a>
 </p>
 </footer>
 
