@@ -1,7 +1,7 @@
-**jeremy.rm**
-***Consummate Curmudgeon,***  
-***Sampler of Fine Vices,***  
-***& Master Adventurer of the Great Underground Empire.***
+**jeremy.rm**  
+*Consummate Curmudgeon,*  
+*Sampler of Fine Vices,*  
+*& Master Adventurer of the Great Underground Empire.*
 
 ***
 
