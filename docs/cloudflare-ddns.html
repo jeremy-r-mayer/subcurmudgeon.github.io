@@ -11,7 +11,8 @@
 :root {
 	--background-color: #fdfdfdff;
 	--foreground-color: #404040ff;
-	--highlight-color: #ffff0040;
+	--highlight-foreground-color: #000000ff;
+	--highlight-background-color: #ffff0040;
 	--link-color: #00aaffff;
 
 	--font-stack-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
@@ -23,7 +24,8 @@
 	:root {
 		--background-color: #1e1f21ff;
 		--foreground-color: #c1c0c0ff;
-		--highlight-color: #00000070;
+		--highlight-foreground-color: #ffffffff;
+		--highlight-background-color: #000000ff;
 		--link-color: #a3d0ffff;
 	}
 }
@@ -51,8 +53,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 mark {
-	background-color: var(--highlight-color);
-	color: var(--foreground-color);
+	background-color: var(--highlight-background-color);
+	border-radius:  0.25rem;
+	color: var(--highlight-foreground-color);
+	padding: 0 0.25rem;
 }
 
 </style>
@@ -119,7 +123,7 @@ curl -s -X PUT &quot;https://api.cloudflare.com/client/v4/zones/$ZONEID/dns_reco
 
 <hr />
 <p style="font-size: small; font-style: italic;">
-	<a href="https://github.com/jeremy-rm/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/jeremy-rm/jeremy-rm.github.io/actions/runs/1160013536" target="_blank">26c2cd6</a>
+	<a href="https://github.com/jeremy-rm/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/jeremy-rm/jeremy-rm.github.io/actions/runs/1160026954" target="_blank">b275f05</a>
 </p>
 </footer>
 
