@@ -61,8 +61,8 @@ $endif$
   
 $body$
 
-<footer>
 $if(title)$
+<hr />
 <script src="https://giscus.app/client.js"
         data-repo="jeremy-rm/jeremy-rm.giscus"
         data-repo-id="MDEwOlJlcG9zaXRvcnkzOTg2NDA1MjQ="
@@ -77,6 +77,7 @@ $if(title)$
 </script>
 $endif$
 
+<footer>
 $for(include-after)$
 $include-after$
 $endfor$
