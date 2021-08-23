@@ -12,15 +12,15 @@ subtitle: A crunchy sponge for your tea and coffee.
 ---
 
 ## Ingredients
-- 4 tablespoons cold, `Unsalted Butter`, roughly cut into 4 pieces
-- 3/4 cup `Sugar`
-- 2 `Eggs`
-- *Optionally*, 1/2 teaspoon `Almond Extract` or `Anise Extract`
-- 1 teaspoon `Vanilla Extract` *or* 1 1/2 teaspoons if not using optional extracts.
-- 2 cups `All-Purpose Flour`
-- 1 teaspoon `Baking Powder`
-- 1/2 teaspoon `Salt`
-- `Coarse Sugar`
+- 4 tablespoons cold, Unsalted Butter, roughly cut into 4 pieces
+- 3/4 cup Sugar
+- 2 Eggs
+- *Optionally*, 1/2 teaspoon Almond Extract or Anise Extract
+- 1 teaspoon Vanilla Extract *or* 1 1/2 teaspoons if not using optional extracts.
+- 2 cups All-Purpose Flour
+- 1 teaspoon Baking Powder
+- 1/2 teaspoon Salt
+- Coarse Sugar
 
 ---
 
@@ -29,13 +29,13 @@ subtitle: A crunchy sponge for your tea and coffee.
 
 2. Line a baking sheet with parchment paper.
 
-3. Put the `unsalted butter` and `sugar` into the bowl of a stand mixer and beat until creamy.
+3. Put the <mark>unsalted butter</mark> and <mark>sugar</mark> into the bowl of a stand mixer and beat until creamy.
 
-4. Add the `eggs` and `extracts` to mixer bowl. Mix to combine.
+4. Add the <mark>eggs</mark> and <mark>extracts</mark> to mixer bowl. Mix to combine.
 
-5. Add the `all-purpose flour`, `baking powder`, and `salt` to mixer bowl and mix on medium speed until well combined and smooth.
+5. Add the <mark>all-purpose flour</mark>, <mark>baking powder</mark>, and <mark>salt</mark> to mixer bowl and mix on medium speed until well combined and smooth.
 
-6. Remove dough and divide in half. Shape each half into a rectangle roughly 8" long, 3" wide and 3/4" thick. Place the two halves side-by-side on a parchment-lined baking sheet and sprinkle with `coarse sugar`.
+6. Remove dough and divide in half. Shape each half into a rectangle roughly 8" long, 3" wide and 3/4" thick. Place the two halves side-by-side on a parchment-lined baking sheet and sprinkle with <mark>coarse sugar</mark>.
 
 7. Bake for 20 to 25 minutes, then allow to cool on baking sheet for 30 minutes.
 
