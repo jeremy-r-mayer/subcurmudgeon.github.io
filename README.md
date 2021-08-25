@@ -8,8 +8,8 @@
 
 This multi-purpose virtual space is intended for, *but not limited to*:
 
-- <mark>**shouting into the endless void**</mark>
-- <mark>**documenting things I expect to forget**</mark>
-- <mark>**malignant nostalgia**</mark>
+- **shouting into the endless void**
+- **documenting things I expect to forget**
+- **malignant nostalgia**
 
 I can be contacted [thusly](mailto:jeremy.rm@01001010.net?subject=Hi!).

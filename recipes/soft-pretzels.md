@@ -3,8 +3,6 @@ title: Soft Pretzels
 subtitle: Pair with beer and repeat as necessary.
 ---
 
-> In the event of total catastrophe, soft pretzels will be my post-apocalyptic currency of choice. <span>&mdash; J.</span>
-
 ## Equipment
 - Stand Mixer
 - 2 Baking Sheets
