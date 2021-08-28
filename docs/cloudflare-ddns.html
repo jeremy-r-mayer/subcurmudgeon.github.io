@@ -44,11 +44,6 @@ a {
 	text-decoration: none;
 }
 
-article {
-	flex: auto;
-	overflow-y: auto;
-}
-
 blockquote {
 	background-color: var(--highlight-background-color);
 	border-radius: 0.5rem;
@@ -72,10 +67,7 @@ blockquote span {
 body {
 	background-color:  var(--background-color);
 	color: var(--foreground-color);
-	display: flex;
-	flex-direction: column;
 	font-family: var(--font-stack-serif);
-	height: 100%;
 	line-height: 1.5;
 	margin: auto;
 	max-width: 78ch;
@@ -99,13 +91,13 @@ mark {
 <body>
 
 <header>
-<nav>
-<a href="/">Home</a> &mdash; <a href="/tree">Tree</a>
-</nav>
 <h1 class="title">Cloudflare DDNS</h1>
 </header>
 
-<article>
+<nav>
+<a href="/">Home</a> &mdash; <a href="/tree">Tree</a>
+</nav>
+
   
   
 <p>This is the script I use on my Raspberry Pi to update its Cloudflare A-record from behind the VPN.</p>
@@ -144,12 +136,11 @@ curl -s -X PUT &quot;https://api.cloudflare.com/client/v4/zones/$ZONEID/dns_reco
     -H &quot;Content-Type: application/json&quot; \
     --data &quot;{\&quot;type\&quot;:\&quot;A\&quot;,\&quot;name\&quot;:\&quot;$RECORD\&quot;,\&quot;content\&quot;:\&quot;$IP\&quot;,\&quot;ttl\&quot;:1,\&quot;proxied\&quot;:true}&quot; | jq</code></pre>
 
-</article>
 
 <footer>
 <hr />
 <p style="font-size: small; font-style: italic;">
-	<a href="https://github.com/jeremy-rm/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/jeremy-rm/jeremy-rm.github.io/actions/runs/1177807132" target="_blank">1498ee2</a>
+	<a href="https://github.com/jeremy-rm/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/jeremy-rm/jeremy-rm.github.io/actions/runs/1177813403" target="_blank">0811b79</a>
 </p>
 </footer>
 

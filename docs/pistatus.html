@@ -44,11 +44,6 @@ a {
 	text-decoration: none;
 }
 
-article {
-	flex: auto;
-	overflow-y: auto;
-}
-
 blockquote {
 	background-color: var(--highlight-background-color);
 	border-radius: 0.5rem;
@@ -72,10 +67,7 @@ blockquote span {
 body {
 	background-color:  var(--background-color);
 	color: var(--foreground-color);
-	display: flex;
-	flex-direction: column;
 	font-family: var(--font-stack-serif);
-	height: 100%;
 	line-height: 1.5;
 	margin: auto;
 	max-width: 78ch;
@@ -99,13 +91,13 @@ mark {
 <body>
 
 <header>
-<nav>
-<a href="/">Home</a> &mdash; <a href="/tree">Tree</a>
-</nav>
 <h1 class="title">PiStatus</h1>
 </header>
 
-<article>
+<nav>
+<a href="/">Home</a> &mdash; <a href="/tree">Tree</a>
+</nav>
+
   
   
 <p>A tmux shortcut for monitoring a Raspberry Pi with PiHole.</p>
@@ -117,12 +109,11 @@ tmux split-window -v &quot;htop&quot;
 tmux resize-pane -U 5
 tmux -2 attach-session -t pistatus</code></pre>
 
-</article>
 
 <footer>
 <hr />
 <p style="font-size: small; font-style: italic;">
-	<a href="https://github.com/jeremy-rm/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/jeremy-rm/jeremy-rm.github.io/actions/runs/1177807132" target="_blank">1498ee2</a>
+	<a href="https://github.com/jeremy-rm/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/jeremy-rm/jeremy-rm.github.io/actions/runs/1177813403" target="_blank">0811b79</a>
 </p>
 </footer>
 
