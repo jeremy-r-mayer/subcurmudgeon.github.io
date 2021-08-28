@@ -35,6 +35,11 @@ a {
 	text-decoration: none;
 }
 
+article {
+	flex: auto;
+	overflow-y: auto;
+}
+
 blockquote {
 	background-color: var(--highlight-background-color);
 	border-radius: 0.5rem;
@@ -58,6 +63,8 @@ blockquote span {
 body {
 	background-color:  var(--background-color);
 	color: var(--foreground-color);
+	display: flex;
+	flex-direction: column;
 	font-family: var(--font-stack-serif);
 	line-height: 1.5;
 	margin: auto;
