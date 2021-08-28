@@ -43,6 +43,11 @@ a {
 	text-decoration: none;
 }
 
+article {
+	flex: auto;
+	overflow-y: auto;
+}
+
 blockquote {
 	background-color: var(--highlight-background-color);
 	border-radius: 0.5rem;
@@ -66,6 +71,8 @@ blockquote span {
 body {
 	background-color:  var(--background-color);
 	color: var(--foreground-color);
+	display: flex;
+	flex-direction: column;
 	font-family: var(--font-stack-serif);
 	line-height: 1.5;
 	margin: auto;
@@ -89,12 +96,13 @@ mark {
 
 <body>
 
-<header id="title-block-header">
+<header>
 <nav>
 <a href="/">Home</a> &mdash; <a href="/tree">Tree</a>
 </nav>
 </header>
 
+<article>
   
   
 <h1 id="jeremy.rm">jeremy.rm</h1>
@@ -110,11 +118,12 @@ mark {
 </ul>
 <p>I can be contacted <a href="mailto:jeremy.rm@01001010.net?subject=Hi!">thusly</a>.</p>
 
+</article>
 
 <footer>
 <hr />
 <p style="font-size: small; font-style: italic;">
-	<a href="https://github.com/jeremy-rm/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/jeremy-rm/jeremy-rm.github.io/actions/runs/1177394069" target="_blank">55527ae</a>
+	<a href="https://github.com/jeremy-rm/publi.sh" target="_blank">publi.sh</a> &rarr; <a href="https://github.com/jeremy-rm/jeremy-rm.github.io/actions/runs/1177801807" target="_blank">bcad8f8</a>
 </p>
 </footer>
 
