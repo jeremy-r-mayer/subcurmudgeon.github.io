@@ -32,9 +32,6 @@ $endfor$
 <body>
 
 <header>
-$for(include-before)$
-$include-before$
-$endfor$
 $if(title)$
 <h1 class="title">$title$</h1>
 $endif$
@@ -43,7 +40,10 @@ $if(subtitle)$
 $endif$
 </header>
 
-<article>
+$for(include-before)$
+$include-before$
+$endfor$
+
 $for(author)$
 <p class="author">$author$</p>
 $endfor$
@@ -77,7 +77,6 @@ $if(comments)$
         async>
 </script>
 $endif$
-</article>
 
 <footer>
 $for(include-after)$
