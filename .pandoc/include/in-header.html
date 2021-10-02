@@ -8,8 +8,8 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--background-color: #1e1f21ff;
-		--foreground-color: #c1c0c0ff;
+		--background-color: #262626ff;
+		--foreground-color: #fffcecff;
 		--highlight-foreground-color: #ffffffff;
 		--highlight-background-color: #000000ff;
 		--link-color: #a3d0ffff;
@@ -26,15 +26,30 @@
 	}
 }
 
-html {
-	font-size:  clamp(14px, 1vw, 24px);
-	height: 100%;
-}
-
 a {
 	color: var(--link-color);
 	text-decoration: none;
 }
+
+body {
+	background-color:  var(--background-color);
+	color: var(--foreground-color);
+	font-family: var(--font-stack-sans);
+	font-size:  clamp(14px, 1vw, 24px);
+	line-height: 1.5;
+	margin: 0 auto;
+	max-width: 78ch;
+	padding: 0 1ch;
+}
+
+mark {
+	background-color: var(--highlight-background-color);
+	border-radius:  0.25rem;
+	color: var(--highlight-foreground-color);
+	padding: 0 0.25rem;
+}
+
+/*
 
 blockquote {
 	background-color: var(--highlight-background-color);
@@ -54,16 +69,6 @@ blockquote span {
 	font-style: normal;
 	font-weight: bold;
 	text-align: right;
-}
-
-body {
-	background-color:  var(--background-color);
-	color: var(--foreground-color);
-	font-family: var(--font-stack-serif);
-	line-height: 1.5;
-	margin: 0 auto;
-	max-width: 78ch;
-	padding: 0 1ch;
 }
 
 header {
@@ -88,11 +93,7 @@ h2.subtitle {
 	font-weight: normal;
 }
 
-mark {
-	background-color: var(--highlight-background-color);
-	border-radius:  0.25rem;
-	color: var(--highlight-foreground-color);
-	padding: 0 0.25rem;
-}
+
+*/
 
 </style>

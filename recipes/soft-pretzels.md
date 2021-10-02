@@ -3,7 +3,7 @@ title: Soft Pretzels
 subtitle: Pair with beer and repeat as necessary.
 ---
 
-## Equipment
+### Equipment
 - Stand Mixer
 - 2 Baking Sheets
 - Saucepan or Pot (about 8 quarts)
@@ -12,7 +12,7 @@ subtitle: Pair with beer and repeat as necessary.
 
 ---
 
-## Ingredients
+### Ingredients
 - 1 1/2 cups Warm Water
 - 1 tablespoons Sugar
 - 2 teaspoons Kosher Salt
@@ -26,7 +26,7 @@ subtitle: Pair with beer and repeat as necessary.
 
 ---
 
-## Directions
+### Directions
 1. Combine <mark>warm water</mark>, <mark>sugar</mark> and <mark>kosher salt</mark> in the bowl of a stand mixer and sprinkle <mark>active dry yeast</mark> on top. Allow to sit for 5 minutes or until the yeast begins to foam, then add the <mark> all-pupose flour</mark> and melted <mark>unsalted butter</mark>. Using a dough hook attachment, mix on low speed until combined, then set to medium speed and knead until the dough is smooth and pulls away from the bowl. Remove the dough, clean and oil the bowl, then return the dough to the bowl and cover with a towel for 1 hour or until the dough has doubled in size.
 
 2. Preheat the oven to 450 degrees F. Line two baking sheets with parchment paper.
