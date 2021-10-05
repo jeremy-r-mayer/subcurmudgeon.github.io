@@ -2,4 +2,4 @@
 title: Kitten!
 ---
 
-![Kitten!](http://www.placekitten.com/800/600)
+![Kitten!](http://www.placekitten.com/1280/600)
