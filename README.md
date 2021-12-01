@@ -10,4 +10,4 @@ This multi-purpose virtual space is intended for, *but not limited to*:
 - **documenting things I expect to forget**
 - **malignant nostalgia**
 
-I can be contacted [thusly](mailto:jeremy.rm@01001010.net?subject=Hi!).
+I can be contacted *[thusly](mailto:jeremy.rm@01001010.net?subject=Hi!)*.
