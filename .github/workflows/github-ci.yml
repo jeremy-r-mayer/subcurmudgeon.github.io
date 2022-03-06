@@ -60,5 +60,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          cname: www.01001010.net
+          # cname: www.01001010.net
           publish_dir: .site
