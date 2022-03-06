@@ -11,3 +11,16 @@ This multi-purpose virtual space is intended for, *but not limited to*:
 - **malignant nostalgia**
 
 I can be contacted *[thusly](mailto:jeremy.rm@01001010.net?subject=Hi!)*.
+
+***
+
+## Directory
+
+- Journal
+- Projects
+- Recipes
+	+ [Biscotti](/recipes/biscotti.html)
+	+ [Bread](/recipes/bread.html)
+	+ [Peanut Butter Sludge](/recipes/peanut-butter-sludge.html)
+	+ [Pourover Coffee](/recipes/pourover.html)
+	+ [Soft Pretzels](/recipes/soft-pretzels.html)
