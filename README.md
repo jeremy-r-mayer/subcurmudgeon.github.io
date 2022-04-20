@@ -11,5 +11,3 @@ This multi-purpose virtual space is intended for, *but not limited to*:
 - **malignant nostalgia** :heart:
 
 I can be contacted *[thusly](mailto:jeremy.rm@01001010.net?subject=Hi!)*.
-
-***
