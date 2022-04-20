@@ -8,19 +8,8 @@ This multi-purpose virtual space is intended for, *but not limited to*:
 
 - **shouting into the endless void**
 - **documenting things I expect to forget**
-- **malignant nostalgia**
+- **malignant nostalgia** :heart:
 
 I can be contacted *[thusly](mailto:jeremy.rm@01001010.net?subject=Hi!)*.
 
 ***
-
-## Journal
-
-## Projects
-
-## Recipes
-+ [Biscotti](/recipes/biscotti.html)
-+ [Bread](/recipes/bread.html)
-+ [Peanut Butter Sludge](/recipes/peanut-butter-sludge.html)
-+ [Pourover Coffee](/recipes/pourover.html)
-+ [Soft Pretzels](/recipes/soft-pretzels.html)
