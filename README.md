@@ -4,10 +4,10 @@
 
 ***
 
-This multi-purpose virtual space is intended for, *but not limited to*:
+**This multi-purpose virtual space is intended for, _but not limited to_:**
 
-- **shouting into the endless void**
-- **documenting things I expect to forget**
-- **semi-malignant nostalgia** :heart:
+- shouting into the endless void
+- documenting things I expect to forget
+- semi-malignant nostalgia :heart:
 
 I can be contacted *[thusly](mailto:jeremy.rm@01001010.net?subject=Hi!)*.
