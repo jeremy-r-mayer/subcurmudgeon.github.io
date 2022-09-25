@@ -17,7 +17,7 @@ pages:
     # https://docs.gitlab.com/ee/ci/variables/predefined_variables.html
     mkdir -p .pandoc/include
     touch .pandoc/include/after-body.html
-    echo -e "<hr />\n<p style=\"font-size: small; font-style: italic;\">\n\t<a href=\"https://www.gitlab.com/jeremy-rm/publi.sh\" target=\"_blank\">publi.sh</a> &rarr; <a href=\"$CI_PIPELINE_URL\" target=\"_blank\">$(echo $CI_COMMIT_SHA | cut -c 1-7)</a>\n</p>" >> .pandoc/include/after-body.html
+    echo -e "<p style=\"font-size: small; font-style: italic;\">\n\t<a href=\"https://www.gitlab.com/jeremy-rm/publi.sh\" target=\"_blank\">publi.sh</a> &rarr; <a href=\"$CI_PIPELINE_URL\" target=\"_blank\">$(echo $CI_COMMIT_SHA | cut -c 1-7)</a>\n</p>" >> .pandoc/include/after-body.html
 
     # Run the latest version of publi.sh from Github with any necessary arguments.
     # https://gitlab.com/jeremy-rm/publi.sh
