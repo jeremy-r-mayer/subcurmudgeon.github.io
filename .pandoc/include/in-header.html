@@ -15,16 +15,18 @@ html {
 	padding: calc(1vmin + .5rem);
 }
 
-body :not(:is(h1,h2,h3,h4,h5,h6)) {
+body {
 	color: #222;
 	font-family: system-ui, sans-serif;
 	font-size: clamp(1em, 0.909em + 0.45vmin, 1.25em);
-	line-height: 1.33;
+}
+
+body :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+	line-height: 1.25;
 }
 
 p,ul,ol {
 	color: #444;
-	font-family: sans-serif;
 	margin-bottom: 2em;
 }
 </style>
